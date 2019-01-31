@@ -2,12 +2,11 @@ TO DO
 
 1) Break down HTML 
 
-2) Push to Git
+2) Write HTML
 
-3) Design mobile 
+3) Write variables and mixins
 
-4) Code
-
+4) Design mobile
 
 
 QUESTIONS
