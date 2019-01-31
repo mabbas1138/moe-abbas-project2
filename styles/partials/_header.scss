@@ -1,0 +1,37 @@
+header {
+    @include full-bleed;
+    background-image: url(../assets/home-image-1.jpg);
+    min-height: 100vh;
+    max-width: 100%;
+    height: auto;
+    padding: 1px;
+
+    h3 {
+        font-size: 2rem;
+        color: $secondary;
+        display: inline-block;
+        padding-left: 20%;
+        font-weight: 400;
+    }
+}
+
+ .header-h1-style {
+        text-align: center;
+        height: 25vh;
+
+    h1 {
+        @include heading-styles (8.3rem, 400, normal);
+        text-align: left;
+        
+        .white {
+            color: $secondary;
+            display: block;
+        }
+    }
+
+}
+
+
+   
+
+

@@ -1,0 +1,22 @@
+.flex-master {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-nav {
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 22px 0 0 30px;
+
+
+        li {
+            padding: 0 30px;
+        }
+    }
+    a {
+        color: $secondary;
+        text-transform: uppercase;
+    }
+}
+

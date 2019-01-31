@@ -1,4 +1,21 @@
-@mixin fontSize($sizeValue) {
-    font-size: $sizeValue * 1px;
-    font-size: ($sizeValue / 20px) * 1rem; 
+$primary: #2c2c2c; /* black */
+$secondary: #f0efed; /* off-white */
+$tertiary: #f8e71c; /* sunny yellow */
+$quaternary: #0e902d; /* green */
+$quinary: #074115; /* forest green */
+$header-font: 'Josefin Sans', 'Open Sans', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+
+@mixin heading-styles ($font-size, $font-weight, $letter-spacing) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    color: $tertiary;
 }
+
+@mixin full-bleed {
+    background-size: cover;
+    background-position: center;
+}
+
