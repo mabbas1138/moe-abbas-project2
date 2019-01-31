@@ -1,13 +1,22 @@
 TO DO
 
-1) Break down HTML 
+2) Write HTML 
 
-2) Write HTML
+*** ADD INNER WRAPPER ***
 
 3) Write variables and mixins
 
-4) Design mobile
+4) Design mobile -- **Consider using CSS animation to reveal images**
 
+5) Make rest of site disappear when About section clicked
+
+** Consider using CSS animation for images and/or nav bar
+
+** Check to see if images are optimized (https://github.com/HackerYou/bootcamp-notes/blob/master/css/image-formats-and-svg.md)
+-- Consider using https://tinypng.com/
+-- **Try not going over 400kb, unless it's a massive background image**
+
+** If your site is loading slowly, it could be because of the image sizes **
 
 QUESTIONS
 
