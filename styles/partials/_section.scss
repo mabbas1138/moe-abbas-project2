@@ -1,0 +1,72 @@
+// "What is Planted" section //
+
+.what-is-planted {
+    background: $secondary;
+    height: 80vh;
+
+    .text-section {
+        text-align: center;
+        max-width: 90%;
+        margin: 25vh;
+   
+        h2 {
+            @include section-heading (2.8rem, 700, center, 1.3px, normal);
+        }
+        
+        a {
+            padding: 10px 30px;
+        }
+    }
+}
+
+// "Events" section //
+
+ 
+
+.event {
+    .text-section-1 {
+        @include halfsies (right);
+    }
+
+    .text-section-2 {
+        @include halfsies (left);
+       
+
+        // .more-info {
+        //     padding-bottom: 15px;
+        // }
+    }
+    
+    h3 {
+        @include section-heading (1.6rem, 700, normal, 1px, normal);
+    }
+}
+
+// "Services" section //
+
+
+
+// "Founder" section //
+
+.fullbleed-image img{
+    max-width: 100%;
+}
+
+.founder {
+    .text-section {
+        width: 60%;
+    }
+}
+
+// Planted Gallery //
+
+.grid-gallery-images {
+    padding: 80px;
+    
+    .flex-master {
+        justify-content: space-between;
+    }
+}
+
+
+

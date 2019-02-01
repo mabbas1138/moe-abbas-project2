@@ -5,6 +5,7 @@ header {
     max-width: 100%;
     height: auto;
     padding: 1px;
+    position: relative;
 
     h3 {
         font-size: 2rem;
@@ -15,23 +16,30 @@ header {
     }
 }
 
- .header-h1-style {
-        text-align: center;
-        height: 25vh;
+.header-h1-style {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 
     h1 {
-        @include heading-styles (8.3rem, 400, normal);
-        text-align: left;
-        
+        @include section-heading (8.3rem, 400, left, normal, 0.75);
+        color: $tertiary;
+        margin-top: 200px;
+        z-index:10;
+    
         .white {
             color: $secondary;
             display: block;
         }
-    }
+    } 
+ }
 
-}
-
-
+ .intruder-plant {
+    width: 40%;
+    position: absolute;
+    top: 320px;
+    right: 0px;
+ }
    
 
 

@@ -64,10 +64,20 @@ li {
   list-style-type: none;
 }
 
-a {
+
+.site-nav a {
   font-family: $header-font;
   font-size: 1rem;
+  color: $senary;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.more-info a {
+  color: $senary;
+  background: $quaternary;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .inner-wrapper {
@@ -75,6 +85,11 @@ a {
   max-width: 1600px;
   width: 100%;
   padding: 1px;
+}
+
+.flex-master {
+    display: flex;
+    flex-direction: row;
 }
 
 

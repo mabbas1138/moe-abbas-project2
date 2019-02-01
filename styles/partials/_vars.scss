@@ -3,19 +3,32 @@ $secondary: #f0efed; /* off-white */
 $tertiary: #f8e71c; /* sunny yellow */
 $quaternary: #0e902d; /* green */
 $quinary: #074115; /* forest green */
+$senary: #ffffff; /* white */
 $header-font: 'Josefin Sans', 'Open Sans', sans-serif;
 $body-font: 'Roboto', sans-serif;
 
-
-@mixin heading-styles ($font-size, $font-weight, $letter-spacing) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    letter-spacing: $letter-spacing;
-    color: $tertiary;
-}
 
 @mixin full-bleed {
     background-size: cover;
     background-position: center;
 }
 
+@mixin section-heading ($font-size, $font-weight, $text-align, $letter-spacing, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+}
+
+@mixin push-auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin halfsies ($text-align){
+    width: 75%;
+    text-align: $text-align;
+}

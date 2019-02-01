@@ -137,6 +137,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 /* sunny yellow */
 /* green */
 /* forest green */
+/* white */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -322,10 +323,18 @@ ul {
 li {
   list-style-type: none; }
 
-a {
+.site-nav a {
   font-family: "Josefin Sans", "Open Sans", sans-serif;
   font-size: 1rem;
-  text-decoration: none; }
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.more-info a {
+  color: #ffffff;
+  background: #0e902d;
+  text-decoration: none;
+  padding: 10px; }
 
 .inner-wrapper {
   margin: 0 auto;
@@ -354,10 +363,6 @@ a {
   .site-nav ul li {
     padding: 0 30px; }
 
-.site-nav a {
-  color: #f0efed;
-  text-transform: uppercase; }
-
 header {
   background-size: cover;
   background-position: center;
@@ -365,7 +370,8 @@ header {
   min-height: 100vh;
   max-width: 100%;
   height: auto;
-  padding: 1px; }
+  padding: 1px;
+  position: relative; }
   header h3 {
     font-size: 2rem;
     color: #f0efed;
@@ -374,16 +380,70 @@ header {
     font-weight: 400; }
 
 .header-h1-style {
-  text-align: center;
-  height: 25vh; }
+  margin: 0;
+  padding: 0;
+  text-align: center; }
   .header-h1-style h1 {
     font-size: 8.3rem;
     font-weight: 400;
+    text-align: left;
     letter-spacing: normal;
+    line-height: 0.75;
     color: #f8e71c;
-    text-align: left; }
+    margin-top: 200px;
+    z-index: 10; }
     .header-h1-style h1 .white {
       color: #f0efed;
       display: block; }
+
+.intruder-plant {
+  width: 40%;
+  position: absolute;
+  top: 320px;
+  right: 0px; }
+
+.what-is-planted {
+  background: #f0efed;
+  height: 80vh; }
+  .what-is-planted .text-section {
+    text-align: center;
+    max-width: 90%;
+    margin: 25vh; }
+    .what-is-planted .text-section h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1.3px;
+      line-height: normal; }
+    .what-is-planted .text-section a {
+      padding: 10px 30px; }
+
+.event .text-section-1 {
+  width: 75%;
+  text-align: right; }
+
+.event .text-section-2 {
+  width: 75%;
+  text-align: left; }
+
+.event h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: normal;
+  letter-spacing: 1px;
+  line-height: normal; }
+
+.fullbleed-image img {
+  max-width: 100%; }
+
+.founder .text-section {
+  width: 60%; }
+
+.grid-gallery-images {
+  padding: 80px; }
+  .grid-gallery-images .flex-master {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
 
 /*# sourceMappingURL=styles.css.map */
