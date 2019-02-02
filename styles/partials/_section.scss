@@ -2,12 +2,10 @@
 
 .what-is-planted {
     background: $secondary;
-    height: 80vh;
-
+    padding: 10% 12%;
+   
     .text-section {
         text-align: center;
-        max-width: 90%;
-        margin: 25vh;
    
         h2 {
             @include section-heading (2.8rem, 700, center, 1.3px, normal);
@@ -21,20 +19,34 @@
 
 // "Events" section //
 
- 
-
+.inner-wrapper {
+    padding: 50px;
+}
 .event {
+
+    .events-image-1 {
+        width: 90%;
+        position: relative;
+        bottom: 80px;
+        right: 50px;
+    }
+    
     .text-section-1 {
         @include halfsies (right);
+        margin-left: 50px;
+
+    }
+
+    .events-image-2 {
+        width: 90%;
+        position: relative;
+        top: 100px;
+        left: 110px;
     }
 
     .text-section-2 {
         @include halfsies (left);
-       
-
-        // .more-info {
-        //     padding-bottom: 15px;
-        // }
+        margin-left: 110px;
     }
     
     h3 {
@@ -43,6 +55,60 @@
 }
 
 // "Services" section //
+
+.services {
+    background: $secondary;
+
+
+    .flex-master {
+        padding: 130px;
+    }
+    
+    .service-1 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f06c";
+        }  
+
+        p {
+            padding-left: 65px;
+        }
+    }
+
+    .service-2 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f15b";
+        }
+        
+        p {
+            padding-left: 60px;
+        }
+    }
+
+    .service-3 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f0c0";
+            
+            
+        }
+        
+        p {
+            padding-left: 65px;
+        }
+    }
+
+    .service-4 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f095";
+        }  
+        p {
+            padding-left: 65px;
+        }
+    }
+}
 
 
 
@@ -53,19 +119,39 @@
 }
 
 .founder {
+    background: $secondary;
+
     .text-section {
-        width: 60%;
+        width: 70%;
+        padding-left: 50px;
+
+        h3 {
+            @include section-heading (2.1rem, 700, normal, 1px, normal);
+        }
+    }
+
+    .flex-master {
+        padding: 130px;
+        justify-content: center;
+       
     }
 }
 
 // Planted Gallery //
 
 .grid-gallery-images {
-    padding: 80px;
-    
+    padding: 50px 130px;
+
     .flex-master {
         justify-content: space-between;
+
+        .gallery-image {
+            width: calc(100% - 40px);
+            padding: 0 20px;
+        }
     }
+
+
 }
 
 

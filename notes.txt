@@ -1,14 +1,14 @@
 TO DO
 
-2) Write HTML 
+1) Change margin and padding values to rems? LOOK UP
 
 *** ADD INNER WRAPPER ***
 
-3) Write variables and mixins
 
 4) Design mobile -- **Consider using CSS animation to reveal images**
 
-5) Make rest of site disappear when About section clicked
+-- Must go down to 320px
+-- Make rest of site disappear when About section clicked
 
 ** Consider using CSS animation for images and/or nav bar
 

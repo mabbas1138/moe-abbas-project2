@@ -36,6 +36,7 @@ html {
 
 body {
   font-size: 1rem;
+  margin: 0;
 }
 
 img {
@@ -74,6 +75,7 @@ li {
 }
 
 .more-info a {
+  font-family: $header-font;
   color: $senary;
   background: $quaternary;
   text-decoration: none;
@@ -91,6 +93,8 @@ li {
     display: flex;
     flex-direction: row;
 }
+
+
 
 
 
