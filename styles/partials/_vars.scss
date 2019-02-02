@@ -7,6 +7,19 @@ $senary: #ffffff; /* white */
 $header-font: 'Josefin Sans', 'Open Sans', sans-serif;
 $body-font: 'Roboto', sans-serif;
 
+@mixin header-style {
+    height: auto;
+    max-width: 100%;
+    padding: 1px;
+    position: relative;
+}
+
+@mixin planted-in-nav {
+    font-size: 2rem;
+    color: $secondary;
+    font-weight: 400;
+    margin: 0;
+}
 
 @mixin full-bleed {
     background-size: cover;
@@ -21,6 +34,7 @@ $body-font: 'Roboto', sans-serif;
 @mixin section-heading ($font-size, $font-weight, $text-align, $letter-spacing, $line-height) {
     font-size: $font-size;
     font-weight: $font-weight;
+    color: $tertiary;
     text-align: $text-align;
     letter-spacing: $letter-spacing;
     line-height: $line-height;
@@ -40,7 +54,7 @@ $body-font: 'Roboto', sans-serif;
 }
 
 @mixin br-yellow-box-shadow {
-    box-shadow: 15px 15px 0 1px $tertiary;
+    box-shadow: 15px 15px 0 1px $tertiary; 
 }
 
 @mixin bl-yellow-box-shadow {

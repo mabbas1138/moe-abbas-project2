@@ -1,22 +1,17 @@
-header {
+// HOME HEADER //
+
+header.home-page {
     @include full-bleed;
+    @include header-style;
     background-image: url(../assets/home-image-1.jpg);
     min-height: 100vh;
-    height: auto;
-    max-width: 100%;
-    padding: 1px;
-    position: relative;
 
     h3 {
-        font-size: 2rem;
-        color: $secondary;
-        display: inline-block;
-        padding-left: 20%;
-        font-weight: 400;
+        @include planted-in-nav;
     }
 }
 
-.header-h1-style {
+.home-h1-style {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -41,5 +36,36 @@ header {
     right: 0px;
  }
    
+// BLOG HEADER //
+
+header.blog-page {
+    @include full-bleed;
+    @include header-style;
+    background-image: url(../assets/blog-header-1.jpg);
+    min-height: 60vh;
+
+    h3 {
+        @include planted-in-nav;
+    }
+}
+
+.page-h1-style {
+    margin: 150px 0 0 30px;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+
+    h1 {
+        @include section-heading (4rem, 700, left, normal, 92px);
+
+    }
+}
+
+.intruder-plant-2 {
+    width: 60%;
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
 
 

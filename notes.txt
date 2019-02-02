@@ -1,8 +1,11 @@
 TO DO
 
-1) Change margin and padding values to rems? LOOK UP
+LOOK UP: Change margin and padding values to rems? LOOK UP
 
+LOOK UP: Change margin and padding values to %?
 *** ADD INNER WRAPPER ***
+
+
 
 
 4) Design mobile -- **Consider using CSS animation to reveal images**
