@@ -1,3 +1,5 @@
+// * HOME PAGE * //
+
 // "What is Planted" section //
 
 .what-is-planted {
@@ -29,19 +31,28 @@
         position: relative;
         bottom: 80px;
         right: 50px;
+
+        img {
+            @include br-yellow-box-shadow;
+        }
+        
     }
     
     .text-section-1 {
         @include halfsies (right);
-        margin-left: 50px;
-
+        margin-left: 60px;
     }
 
     .events-image-2 {
         width: 90%;
         position: relative;
-        top: 100px;
-        left: 110px;
+        top: 60px;
+        left: 118px;
+
+        img {
+            @include bl-yellow-box-shadow;
+        }
+        
     }
 
     .text-section-2 {
@@ -114,12 +125,21 @@
 
 // "Founder" section //
 
-.fullbleed-image img{
+.fullbleed-image img {
     max-width: 100%;
+    
 }
 
 .founder {
     background: $secondary;
+
+    .founder-image {
+        margin-top: 10px;
+
+        img {
+            @include br-yellow-box-shadow;
+        }
+    }
 
     .text-section {
         width: 70%;
@@ -136,6 +156,8 @@
        
     }
 }
+
+
 
 // Planted Gallery //
 

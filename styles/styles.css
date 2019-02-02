@@ -306,10 +306,13 @@ body {
 img {
   max-width: 100%; }
 
-h1,
+h1 {
+  font-family: "Josefin Sans", "Open Sans", sans-serif; }
+
 h2,
 h3 {
-  font-family: "Josefin Sans", "Open Sans", sans-serif; }
+  font-family: "Josefin Sans", "Open Sans", sans-serif;
+  font-weight: 700; }
 
 p {
   font-family: "Roboto", sans-serif;
@@ -426,17 +429,23 @@ header {
   position: relative;
   bottom: 80px;
   right: 50px; }
+  .event .events-image-1 img {
+    -webkit-box-shadow: 15px 15px 0 1px #f8e71c;
+    box-shadow: 15px 15px 0 1px #f8e71c; }
 
 .event .text-section-1 {
   width: 75%;
   text-align: right;
-  margin-left: 50px; }
+  margin-left: 60px; }
 
 .event .events-image-2 {
   width: 90%;
   position: relative;
-  top: 100px;
-  left: 110px; }
+  top: 60px;
+  left: 118px; }
+  .event .events-image-2 img {
+    -webkit-box-shadow: -15px 15px #f8e71c;
+    box-shadow: -15px 15px #f8e71c; }
 
 .event .text-section-2 {
   width: 75%;
@@ -496,6 +505,11 @@ header {
 
 .founder {
   background: #f0efed; }
+  .founder .founder-image {
+    margin-top: 10px; }
+    .founder .founder-image img {
+      -webkit-box-shadow: 15px 15px 0 1px #f8e71c;
+      box-shadow: 15px 15px 0 1px #f8e71c; }
   .founder .text-section {
     width: 70%;
     padding-left: 50px; }

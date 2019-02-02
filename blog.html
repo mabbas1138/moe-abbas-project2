@@ -16,7 +16,7 @@
 
     <header>
         <div class="flex-master">
-            <h3>Planted</h3>
+            <h3 class="planted-nav-text">Planted</h3>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,16 +26,24 @@
                 </ul>
             </nav>
         </div>
-        <h1 class="heading-styles">Blog</h1>
+        <div class="inner-wrapper">
+            <div class="page-h1-style">
+                <h1>Blog</h1>
+            </div>
+        
+        <div class="intruder-plant-2">
+            <img src="./assets/post-image.jpg" alt="plant getting sun">
+        </div>
+        </div>
     </header>
 
     <aside>
-        <div class="aside-image">
-            <img src="" alt="">
+        <div class="sidebar-image">
+            <img src="./assets/side-bar-image.jpg" alt="open window front on side of old house">
         </div>
         <div class="aside-text">
             <h3>About Planted</h3>
-            <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="about.html" class="bold-word">Find out more.</a></p>
+            <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="about.html"> Find out more.</a></p>
         </div>
         <div class="recent-posts">
             <h3>Recent posts</h3>
@@ -69,27 +77,30 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas eos sequi totam, quae quasi expedita similiquecorporis earum asperiores iste ea accusantium animi officiis nihil deserunt illo ab, itaque consectetur.</p>
             </div>
         </section>
-        <section class="comments">
+        <section class="comments"> 
+            <div class="inner-wrapper">
             <h3>Comments</h3>
+            
             <div class="jeremy-comment-all">
                 <div class="jeremy-image">
-                    <img src="" alt="">
+                    <img src="./assets/profile-image.jpg" alt="poster jeremy's profile picture">
                 </div>
                 <div class="jeremy-comment-text">
-                    <p class="dark-green">Tuesday October 9th, 2018 by Jeremy</p>
+                    <p>Tuesday October 9th, 2018 by Jeremy</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aut doloremque voluptate quod asperiores sapiente autem cum incidunt culpa animi rerum quisquam omnis sed est aliquam mollitia libero ipsum soluta aperiam magnam? Quia,aliquid praesentium.</p>
                 </div>
             </div>
             <div class="julia-comment-all">
                 <div class="julia-image">
-                    <img src="" alt="">
+                    <img src="./assets/profile-image-2.jpg" alt="poster Julia's profile picture'">
                 </div>
                 <div class="julia-comment-text">
-                    <p class="bold-word">Wednesday October 10th, 2018 by Julia</p>
+                    <p>Wednesday October 10th, 2018 by Julia</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aut doloremque voluptate quod asperiores
                         sapiente autem, cum incidunt culpa animi rerum quisquam omnis sed est aliquam mollitia libero ipsum soluta
                         aperiam magnam? Quia, aliquid praesentium.</p>
                 </div>
+            </div>
             </div>
         </section>
         <section class="communication-form">
@@ -97,7 +108,7 @@
             <input type="text" name="name" class="user-name" placeholder="Name">
             <label for="email" class="visuallyhidden">Email</label>
             <input type="email" name="email" class="emailAddress" placeholder="Email address">
-            <textarea name="comment" id="message" cols="30" rows="4" maxlength="200" placeholder="Comment"></textarea>
+            <textarea name="comment" id="message" cols="70" rows="4" maxlength="200" placeholder="Comment"></textarea>
 			<input type="submit" class="submit" value="Post Comment">
         </section>
     </main>

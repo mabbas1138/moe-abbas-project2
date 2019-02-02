@@ -39,6 +39,10 @@ $body-font: 'Roboto', sans-serif;
     background: $tertiary;
 }
 
-@mixin yellow-box-shadow {
+@mixin br-yellow-box-shadow {
+    box-shadow: 15px 15px 0 1px $tertiary;
+}
 
+@mixin bl-yellow-box-shadow {
+    box-shadow: -15px 15px $tertiary;
 }
