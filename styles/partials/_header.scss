@@ -1,7 +1,7 @@
 // HOME HEADER //
 
 header.home-page {
-    @include full-bleed;
+    @include full-bleed (center);
     @include header-style;
     background-image: url(../assets/home-image-1.jpg);
     min-height: 100vh;
@@ -39,11 +39,11 @@ header.home-page {
 // BLOG HEADER //
 
 header.blog-page {
-    @include full-bleed;
+    @include full-bleed (contain);
     @include header-style;
     background-image: url(../assets/blog-header-1.jpg);
-    min-height: 60vh;
-
+    min-height: 70vh;
+    
     h3 {
         @include planted-in-nav;
     }
@@ -57,15 +57,7 @@ header.blog-page {
 
     h1 {
         @include section-heading (4rem, 700, left, normal, 92px);
-
+        color: $tertiary;   
     }
 }
-
-.intruder-plant-2 {
-    width: 60%;
-    position: absolute;
-    top: 300px;
-    right: 0;
-}
-
 

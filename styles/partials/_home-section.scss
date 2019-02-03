@@ -21,33 +21,33 @@
 
 // "Events" section //
 
-.inner-wrapper {
-    padding: 50px;
-}
+
 .event {
+    width: 100%;
+
+
 
     .events-image-1 {
         width: 90%;
         position: relative;
         bottom: 80px;
-        right: 50px;
+    
 
         img {
             @include br-yellow-box-shadow;
         }
-        
     }
     
     .text-section-1 {
         @include halfsies (right);
         margin-left: 60px;
+        
     }
 
     .events-image-2 {
         width: 90%;
         position: relative;
         top: 60px;
-        left: 118px;
 
         img {
             @include bl-yellow-box-shadow;
@@ -156,7 +156,6 @@
        
     }
 }
-
 
 
 // Planted Gallery //

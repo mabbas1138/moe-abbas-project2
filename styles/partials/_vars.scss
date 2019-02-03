@@ -19,11 +19,13 @@ $body-font: 'Roboto', sans-serif;
     color: $secondary;
     font-weight: 400;
     margin: 0;
+
 }
 
-@mixin full-bleed {
+
+@mixin full-bleed ($background-position) {
     background-size: cover;
-    background-position: center;
+    background-position: $background-position;
 }
 
 @mixin margin-padding-0 {
@@ -34,7 +36,6 @@ $body-font: 'Roboto', sans-serif;
 @mixin section-heading ($font-size, $font-weight, $text-align, $letter-spacing, $line-height) {
     font-size: $font-size;
     font-weight: $font-weight;
-    color: $tertiary;
     text-align: $text-align;
     letter-spacing: $letter-spacing;
     line-height: $line-height;
