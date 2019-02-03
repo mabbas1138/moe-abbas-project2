@@ -39,6 +39,14 @@ $body-font: 'Roboto', sans-serif;
     background-position: $background-position;
 }
 
+@mixin br-yellow-box-shadow {
+    box-shadow: 15px 15px 0 1px $tertiary; 
+}
+
+@mixin bl-yellow-box-shadow {
+    box-shadow: -15px 15px $tertiary;
+}
+
 @mixin margin-padding-0 {
     margin: 0;
     padding: 0;
@@ -60,14 +68,6 @@ $body-font: 'Roboto', sans-serif;
     background: $tertiary;
 }
 
-@mixin br-yellow-box-shadow {
-    box-shadow: 15px 15px 0 1px $tertiary; 
-}
-
-@mixin bl-yellow-box-shadow {
-    box-shadow: -15px 15px $tertiary;
-}
-
 @mixin input {
     font-family: $header-font;
     font-weight: 300;
@@ -75,8 +75,14 @@ $body-font: 'Roboto', sans-serif;
     line-height: 1.6rem;
     text-align: left;
     border: none;
-    border-bottom: 1px solid $quaternary; 
-    
-    
+    border-bottom: 1px solid $quaternary;   
 }
+
+@mixin yellow-hover {
+    a:hover {
+        color: $tertiary;
+        transition: 0.5s;
+    }
+}
+
 

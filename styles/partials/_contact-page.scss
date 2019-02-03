@@ -1,5 +1,91 @@
+// GENERAL
+
 .contact-inner-wrapper {
     background: $secondary;
+    height: 50vh;
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+// CONTACT INFO section //
+
+.contact-info-all {
+    padding: 5% 0 0 5%;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding: 10px 15px 10px 0;
+
+
+            a {
+                color: $quaternary;
+                
+            }
+        }
+    }
 }
 
-//
+.contact-info {
+    margin-top: 10%;
+    
+    p:first-child {
+        font-family: $header-font;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    p {
+        line-height: 0.5;
+    }
+    
+}
+
+// CONTACT FORM section //
+
+.contact-form {
+    position: relative;
+    bottom: 160px;
+    @include bl-yellow-box-shadow;
+    width: 50%;
+    background: $senary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 40px 30px;
+
+
+    input[type=text],
+    input[type=email] {
+        @include input;
+        width: 45%;
+        padding: 0 0 10px 20px;
+        margin-bottom: 30px;
+    }
+
+       input[type=email] {
+        margin-left: 27px;
+    }
+
+    textarea {
+        width: 95%; 
+        padding: 20px;
+        border: 1px solid $quaternary;
+        
+    }
+
+    input[type=submit] {
+        width: 95%;
+        font-family: $header-font;
+        color: $senary;
+        text-decoration: none;
+        background: $quaternary;
+        border: none;
+        margin-top: 40px;
+        padding: 10px;
+    }
+}

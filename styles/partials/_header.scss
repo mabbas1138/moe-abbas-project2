@@ -82,6 +82,7 @@ header.contact-page {
         h1 {
             @include section-heading (4rem, 700, left, normal, normal);
             color: $tertiary;
+           
 
             .block {
                 display: block;
