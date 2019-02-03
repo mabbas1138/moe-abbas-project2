@@ -10,6 +10,7 @@ TO DO
 
 > Change to rems on margins and padding
 
+> Change flex-master global as mixin and update html accordingly
 
 4) Design mobile -- **Consider using CSS animation to reveal images**
 
@@ -26,3 +27,4 @@ TO DO
 
 QUESTIONS
 
+> Ask what to use to break up the contact h1 into two lines?

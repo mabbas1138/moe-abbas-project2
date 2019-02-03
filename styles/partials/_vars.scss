@@ -7,6 +7,19 @@ $senary: #ffffff; /* white */
 $header-font: 'Josefin Sans', 'Open Sans', sans-serif;
 $body-font: 'Roboto', sans-serif;
 
+
+@mixin halfsies ($text-align) {
+    width: 75%;
+    text-align: $text-align;
+}
+
+@mixin flex-goodness ($flex-direction, $justify-content, $align-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-content: $align-content;
+}
+
 @mixin header-style {
     height: auto;
     max-width: 100%;
@@ -39,11 +52,6 @@ $body-font: 'Roboto', sans-serif;
     line-height: $line-height;
 }
 
-@mixin halfsies ($text-align) {
-    width: 75%;
-    text-align: $text-align;
-}
-
 @mixin service-icon-styling {
     font-family: 'Font Awesome 5 Free';
     border-radius: 50%;
@@ -59,3 +67,16 @@ $body-font: 'Roboto', sans-serif;
 @mixin bl-yellow-box-shadow {
     box-shadow: -15px 15px $tertiary;
 }
+
+@mixin input {
+    font-family: $header-font;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid $quaternary; 
+    
+    
+}
+

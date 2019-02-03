@@ -47,16 +47,46 @@ header.blog-page {
     h3 {
         @include planted-in-nav;
     }
+
+
+    .page-h1-style {
+        margin: 250px 0 0 150px;
+        padding: 0;
+        text-align: left;
+
+        h1 {
+            @include section-heading (4rem, 700, left, normal, 92px);
+            color: $tertiary;   
+        }
+    }
 }
 
-.page-h1-style {
-    margin: 250px 0 0 150px;
-    padding: 0;
-    text-align: left;
+// CONTACT HEADER //
 
-    h1 {
-        @include section-heading (4rem, 700, left, normal, 92px);
-        color: $tertiary;   
+header.contact-page {
+    @include full-bleed (contain);
+    @include header-style;
+    background-image: url(../assets/contact-header-1.jpg);
+    min-height: 50vh;
+
+    h3 {
+        @include planted-in-nav;
+    }
+
+
+    .page-h1-style {
+        margin: 250px 0 0 150px;
+        padding: 0;
+        text-align: left;
+
+        h1 {
+            @include section-heading (4rem, 700, left, normal, normal);
+            color: $tertiary;
+
+            .block {
+                display: block;
+            }
+        }
     }
 }
 

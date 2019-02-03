@@ -15,10 +15,9 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content.</a>
 
-    <header>
-        <div class="flex-master">
+    <header class="contact-page">
             <nav class="site-nav">
-                <h3>Planted</h3>
+                <h3 class="planted-nav-text">Planted</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href=index.html#about>About</a></li>
@@ -27,17 +26,22 @@
                 </ul>
             </nav>
         </div>
-        <div class="h1-style">
-            <h1 class="heading-style">Get in Touch</h1>
+        <div class="inner-wrapper">
+        <div class="page-h1-style">
+            <h1>Get in<span class="block">Touch</span></h1>
+        </div>
         </div>
     </header>
 
+    <div class="contact-inner-wrapper">
     <main>
-        <section class="communication-form">
-            <label for="name" class="visuallyhidden">Name</label>
-            <input type="text" name="name" class="user-name" placeholder="Name">
-            <label for="email" class="visuallyhidden">Email</label>
-            <input type="email" name="email" class="emailAddress" placeholder="Email address">
+        <section class="contact-form">
+            <div class="user-contact-info">
+                <label for="name" class="visuallyhidden">Name</label>
+                <input type="text" name="name" class="user-name" placeholder="Name">
+                <label for="email" class="visuallyhidden">Email</label>
+                <input type="email" name="email" class="emailAddress" placeholder="Email address">
+            </div>
             <textarea name="message" id="message" cols="30" rows="4" maxlength="200" placeholder="Message"></textarea>
             <input type="submit" class="submit" value="Submit">
         </section>
@@ -60,17 +64,15 @@
                     </li>
                 </ul>
             </nav>
-
-
-            </div>
             <div class="contact-info">
-                <p class="bold-word">info@email.com</p>
+                <p>info@email.com</p>
                 <p>123 - 456 - 789</p>
                 <p>123 Queen Street West, Unit 10</p>
                 <p>Toronto, Ontario</p>
                 <p>M5V2D5</p>
             </div>
-        </section>
+        </section>    
+    </div>
     </main>
     <footer>
         <div class="copyrightContainer">

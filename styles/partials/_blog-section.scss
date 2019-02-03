@@ -96,7 +96,7 @@ aside {
 }
 
 
-// COMMENTS SECTION
+// VISITOR COMMENTS SECTION
 .comments {
     padding-left: 40%;
 
@@ -127,4 +127,45 @@ aside {
     width: 75%;
     padding-left: 30px;
 
+}
+
+// USER COMMENT BOX
+
+
+.communication-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 0 60px 40%;
+  
+    input[type=text],
+    input[type=email] {
+        @include input;
+        width: 45%;
+        background: $secondary;
+        padding: 0 0 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    input[type=email] {
+        margin-left: 37px;
+    }
+
+    textarea {
+        width: 95%; 
+        padding: 20px;
+        
+    }
+
+    input[type=submit] {
+        width: 95%;
+        font-family: $header-font;
+        color: $senary;
+        text-decoration: none;
+        background: $quaternary;
+        border: none;
+        margin-top: 30px;
+        padding: 10px;
+    }
 }
