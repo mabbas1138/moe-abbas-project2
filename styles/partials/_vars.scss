@@ -19,9 +19,7 @@ $body-font: 'Roboto', sans-serif;
     color: $secondary;
     font-weight: 400;
     margin: 0;
-
 }
-
 
 @mixin full-bleed ($background-position) {
     background-size: cover;
