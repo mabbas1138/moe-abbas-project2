@@ -4,6 +4,10 @@ LOOK UP: Change margin and padding values to rems? LOOK UP
 
 LOOK UP: Change margin and padding values to %?
 
+LOOK UP: setting images as max-width 100%
+
+
+
 *** ADD INNER WRAPPER ***
 
 TO DO
@@ -11,6 +15,8 @@ TO DO
 > Change to rems on margins and padding
 
 > Change flex-master global as mixin and update html accordingly
+
+> Look at first project to see use of margin, padding, max-width
 
 4) Design mobile -- **Consider using CSS animation to reveal images**
 
@@ -28,3 +34,5 @@ TO DO
 QUESTIONS
 
 > Ask what to use to break up the contact h1 into two lines?
+
+> Why can't I resize the images while doing responsive? Does it have to do with img max-width: 100%?

@@ -4,12 +4,25 @@
     @include breakpoint (range1) {
         display: block;
     }
+
 }
 // NAV section //
+
 
 .site-nav {
     @include breakpoint (range1) {
         display: none;
+    }
+
+    @include breakpoint (range2) {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    ul li {
+        @include breakpoint (range2) {
+            padding: 0;
+        }
     }
 }
 
@@ -42,6 +55,11 @@ header.contact-page {
             text-align: center;
             z-index: 0;
         }
+
+        @include breakpoint (range2) {
+            margin: 130px auto;
+            text-align: left;
+        }
     }
 }
 
@@ -68,6 +86,10 @@ header.blog-page {
             margin: 0;
             padding: 0;
             text-align: center;
+        }
+
+        @include breakpoint (range2) {
+
         }
     }
 }
@@ -113,10 +135,13 @@ header.contact-page {
 
 // "Events" section
 .event {
-    // .events-images-1 {
-    //     @include breakpoint (range1) {
-    //         position: 
-    //     }
+    @include breakpoint (range2) {
+        padding: 30px;
+    }
+    .events-images-1 {
+        @include breakpoint (range2) {    
+        }
+    }
 
     .text-section-1,
     .text-section-2 {
@@ -126,5 +151,62 @@ header.contact-page {
             margin: 0;
             text-align: center;
         }
+
+        @include breakpoint (range2) {
+            text-align: left;
+            padding-left: 10px;
+            margin: 0;
+        }
+    
+        h3 {
+            @include breakpoint (range1) {
+                @include section-heading (1.2rem, 700, normal, normal, normal);
+            }
+        }
     }
 }
+
+
+// "Services" section
+
+.service-1,
+.service-2,
+.service-3,
+.service-4 {
+    h3::before {
+        @include breakpoint (range1) {
+            display: none;
+        }
+    }
+}
+// "Founder" section
+
+.fullbleed-image img {
+   @include breakpoint (range1) {
+    width: 320px;
+   }
+}
+
+.founder {
+
+    .founder-image {
+        @include breakpoint (range1) {
+            margin: 0;
+            padding: 0;
+        }
+
+        @include breakpoint (range2) {
+            width: 120%;
+            padding-left: 0;
+        }
+    }
+} 
+
+.founder-image {
+    img {
+        @include breakpoint (range1) {
+            width: 320px;
+        }
+    }
+}
+    

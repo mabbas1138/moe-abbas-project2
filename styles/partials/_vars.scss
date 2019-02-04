@@ -13,12 +13,6 @@ $body-font: 'Roboto', sans-serif;
     text-align: $text-align;
 }
 
-@mixin flex-goodness ($flex-direction, $justify-content, $align-content) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justify-content;
-    align-content: $align-content;
-}
 
 @mixin header-style {
     height: auto;
@@ -35,7 +29,6 @@ $body-font: 'Roboto', sans-serif;
     float: left;
     margin: 0;
     padding-left: 90px;
-
 }
 
 @mixin full-bleed ($background-position) {
@@ -92,5 +85,9 @@ $body-font: 'Roboto', sans-serif;
 @mixin breakpoint ($class) {
     @if $class == range1 {
         @media(min-width: 320px) and (max-width: 768px) { @content; }
+    }
+
+    @else if $class == range2 {
+        @media(min-width: 769px) and (max-width: 870px) { @content; }
     }
 }

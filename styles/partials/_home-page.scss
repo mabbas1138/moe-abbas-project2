@@ -21,6 +21,13 @@
 
 // "Events" section //
 
+.events {
+    .flex-master {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .event {
     width: 100%;
 
@@ -67,8 +74,9 @@
 .services {
     background: $secondary;
 
-
     .flex-master {
+        display: flex;
+        flex-direction: row;
         padding: 130px;
     }
     
@@ -97,9 +105,7 @@
     .service-3 {
         h3::before {
             @include service-icon-styling;
-            content: "\f0c0";
-            
-            
+            content: "\f0c0"; 
         }
         
         p {
@@ -129,6 +135,11 @@
 
 .founder {
     background: $secondary;
+
+    .flex-master {
+        display: flex;
+        flex-direction: row;
+    }
 
     .founder-image {
         margin-top: 10px;
@@ -161,6 +172,8 @@
     padding: 50px 130px;
 
     .flex-master {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
 
         .gallery-image {

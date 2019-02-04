@@ -354,7 +354,7 @@ li {
   width: 100%;
   padding: 1px; }
 
-.flex-master {
+.home-page .flex-master {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,6 +493,15 @@ header.contact-page {
     .what-is-planted .text-section a {
       padding: 10px 30px; }
 
+.events .flex-master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
 .event {
   width: 100%; }
   .event .events-image-1 {
@@ -527,6 +536,13 @@ header.contact-page {
 .services {
   background: #f0efed; }
   .services .flex-master {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding: 130px; }
   .services .service-1 h3::before {
     font-family: 'Font Awesome 5 Free';
@@ -570,6 +586,14 @@ header.contact-page {
 
 .founder {
   background: #f0efed; }
+  .founder .flex-master {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
   .founder .founder-image {
     margin-top: 10px; }
     .founder .founder-image img {
@@ -593,6 +617,13 @@ header.contact-page {
 .grid-gallery-images {
   padding: 50px 130px; }
   .grid-gallery-images .flex-master {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -840,6 +871,15 @@ aside {
   .site-nav {
     display: none; } }
 
+@media (min-width: 769px) and (max-width: 870px) {
+  .site-nav {
+    padding: 0;
+    margin: 0 auto; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .site-nav ul li {
+    padding: 0; } }
+
 @media (min-width: 320px) and (max-width: 768px) {
   header.home-page,
   header.blog-page,
@@ -864,6 +904,11 @@ aside {
     margin: 200px auto;
     text-align: center;
     z-index: 0; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .home-h1-style h1 {
+    margin: 130px auto;
+    text-align: left; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .intruder-plant {
@@ -907,6 +952,10 @@ aside {
     letter-spacing: 1px;
     line-height: normal; } }
 
+@media (min-width: 769px) and (max-width: 870px) {
+  .event {
+    padding: 30px; } }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .event .text-section-1,
   .event .text-section-2 {
@@ -914,5 +963,46 @@ aside {
     max-width: 100%;
     margin: 0;
     text-align: center; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .event .text-section-1,
+  .event .text-section-2 {
+    text-align: left;
+    padding-left: 10px;
+    margin: 0; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .event .text-section-1 h3,
+  .event .text-section-2 h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: normal;
+    letter-spacing: normal;
+    line-height: normal; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .service-1 h3::before,
+  .service-2 h3::before,
+  .service-3 h3::before,
+  .service-4 h3::before {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .fullbleed-image img {
+    width: 320px; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .founder .founder-image {
+    margin: 0;
+    padding: 0; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .founder .founder-image {
+    width: 120%;
+    padding-left: 0; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .founder-image img {
+    width: 320px; } }
 
 /*# sourceMappingURL=styles.css.map */
