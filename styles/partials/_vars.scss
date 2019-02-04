@@ -86,3 +86,14 @@ $body-font: 'Roboto', sans-serif;
 }
 
 
+
+// MEDIA QUERIES //
+
+@mixin breakpoint ($class) {
+    @if $class == range1 {
+        @media(min-width: 320px) and (max-width: 768px) { @content; }
+    }
+
+    // @else if $class == range2 {}
+
+}

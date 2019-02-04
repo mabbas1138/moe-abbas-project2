@@ -6,8 +6,10 @@ header.home-page {
     background-image: url(../assets/home-image-1.jpg);
     min-height: 100vh;
 
-    h3 {
-        @include planted-in-nav;
+    @include breakpoint (range1) {
+        background-size: cover;
+        background-position: cover;       
+        width: auto; 
     }
 }
 
@@ -15,12 +17,25 @@ header.home-page {
     margin: 0;
     padding: 0;
     text-align: center;
+    
+    @include breakpoint (range1) {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
     h1 {
         @include section-heading (8.3rem, 400, left, normal, 0.75);
         color: $tertiary;
-        margin-top: 200px;
+        margin: 300px 0 0 150px;
         z-index:10;
+
+        @include breakpoint (range1) {
+            @include section-heading (3rem, 400, center, normal, normal);
+            margin: 200px auto;
+            text-align: center;
+            z-index: 0;
+        }
     
         .white {
             color: $secondary;
@@ -34,6 +49,10 @@ header.home-page {
     position: absolute;
     top: 320px;
     right: 0px;
+
+    @include breakpoint (range1) {
+        display: none;
+    }
  }
    
 // BLOG HEADER //
@@ -43,20 +62,34 @@ header.blog-page {
     @include header-style;
     background-image: url(../assets/blog-header-1.jpg);
     min-height: 70vh;
-    
-    h3 {
-        @include planted-in-nav;
-    }
 
+    @include breakpoint (range1) {
+        background-size: cover;
+        background-position: cover;       
+        width: auto; 
+    }
 
     .page-h1-style {
         margin: 250px 0 0 150px;
         padding: 0;
         text-align: left;
 
+        @include breakpoint (range1) {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
         h1 {
             @include section-heading (4rem, 700, left, normal, 92px);
-            color: $tertiary;   
+            color: $tertiary; 
+            
+            @include breakpoint (range1) {
+                @include section-heading (3rem, 400, center, normal, normal);
+                margin: 200px auto;
+                text-align: center;
+                z-index: 0;
+            }
         }
     }
 }
@@ -69,23 +102,41 @@ header.contact-page {
     background-image: url(../assets/contact-header-1.jpg);
     min-height: 50vh;
 
-    h3 {
-        @include planted-in-nav;
+    @include breakpoint (range1) {
+        background-size: cover;
+        background-position: cover;       
+        width: auto; 
     }
-
 
     .page-h1-style {
         margin: 250px 0 0 150px;
         padding: 0;
         text-align: left;
 
+        @include breakpoint (range1) {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+            
+
         h1 {
             @include section-heading (4rem, 700, left, normal, normal);
             color: $tertiary;
-           
 
+            @include breakpoint (range1) {
+                @include section-heading (2rem, 400, center, normal, normal);
+                padding-top: 80px;
+                text-align: center;
+            }
+           
             .block {
                 display: block;
+
+                @include breakpoint (range1) {
+                    display: none;
+            }
+
             }
         }
     }

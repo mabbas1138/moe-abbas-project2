@@ -2,7 +2,12 @@
 .site-nav {
     padding: 10px 0 0 65px;
 
+    @include breakpoint (range1) {
+        display: none;
+    }
+
     h3 {
+        @include planted-in-nav;
         display: block;
         float: left;
         padding-left: 90px;
@@ -11,7 +16,6 @@
     ul {
         display: flex;
         flex-direction: row;
-        
 
         li {
             padding: 10px 30px;
