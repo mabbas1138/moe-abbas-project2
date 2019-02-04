@@ -16,7 +16,7 @@ header.home-page {
     h1 {
         @include section-heading (8.3rem, 400, left, normal, 0.75);
         color: $tertiary;
-        margin: 300px 0 0 150px;
+        margin: 20% 0 0 10%;
         z-index:10;
     
         .white {
@@ -30,7 +30,7 @@ header.home-page {
     width: 40%;
     position: absolute;
     top: 320px;
-    right: 0px;
+    right: 0;
  }
    
 // BLOG HEADER //
@@ -46,12 +46,12 @@ header.blog-page {
     }
 
     .page-h1-style {
-        margin: 250px 0 0 150px;
+        margin: 20% 0 0 10%;
         padding: 0;
         text-align: left;
 
         h1 {
-            @include section-heading (4rem, 700, left, normal, 92px);
+            @include section-heading (4rem, 700, left, normal, 4.6rem);
             color: $tertiary;   
 
         }
@@ -67,7 +67,7 @@ header.contact-page {
     min-height: 50vh;
 
     .page-h1-style {
-        margin: 250px 0 0 150px;
+        margin: 16% 0 0 10%;
         padding: 0;
         text-align: left;
 

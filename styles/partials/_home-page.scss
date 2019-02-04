@@ -10,11 +10,11 @@
         text-align: center;
    
         h2 {
-            @include section-heading (2.8rem, 700, center, 1.3px, normal);
+            @include section-heading (2.8rem, 700, center, 0.05rem, normal);
         }
         
         a {
-            padding: 10px 30px;
+            padding: 2% 3%;
         }
     }
 }
@@ -34,8 +34,7 @@
     .events-image-1 {
         width: 90%;
         position: relative;
-        bottom: 80px;
-    
+        bottom: 11%;
 
         img {
             @include br-yellow-box-shadow;
@@ -44,14 +43,16 @@
     
     .text-section-1 {
         @include halfsies (right);
-        margin-left: 60px;
+        margin-left: 16%;
+        padding-bottom: 3%;
         
     }
 
     .events-image-2 {
         width: 90%;
         position: relative;
-        top: 60px;
+        top: 10%;
+        left: 10%;
 
         img {
             @include bl-yellow-box-shadow;
@@ -61,7 +62,7 @@
 
     .text-section-2 {
         @include halfsies (left);
-        margin-left: 110px;
+        margin-left: 8%;
     }
     
     h3 {
@@ -77,7 +78,7 @@
     .flex-master {
         display: flex;
         flex-direction: row;
-        padding: 130px;
+        padding: 10%;
     }
     
     .service-1 {
@@ -87,7 +88,7 @@
         }  
 
         p {
-            padding-left: 65px;
+            padding-left: 12%;
         }
     }
 
@@ -98,7 +99,7 @@
         }
         
         p {
-            padding-left: 60px;
+            padding-left: 11%;
         }
     }
 
@@ -109,7 +110,7 @@
         }
         
         p {
-            padding-left: 65px;
+            padding-left: 12%;
         }
     }
 
@@ -119,7 +120,7 @@
             content: "\f095";
         }  
         p {
-            padding-left: 65px;
+            padding-left: 12%;
         }
     }
 }
@@ -142,16 +143,16 @@
     }
 
     .founder-image {
-        margin-top: 10px;
+        margin-top: 1%;
 
         img {
             @include br-yellow-box-shadow;
         }
     }
 
-    .text-section {
+    .founder-text {
         width: 70%;
-        padding-left: 50px;
+        padding: 1% 0 0 5%;
 
         h3 {
             @include section-heading (2.1rem, 700, normal, 1px, normal);
@@ -159,7 +160,7 @@
     }
 
     .flex-master {
-        padding: 130px;
+        padding: 9%;
         justify-content: center;
        
     }
@@ -169,7 +170,7 @@
 // Planted Gallery //
 
 .grid-gallery-images {
-    padding: 50px 130px;
+    padding: 5% 9%;
 
     .flex-master {
         display: flex;

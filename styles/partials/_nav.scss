@@ -6,7 +6,7 @@
 }
 
 .site-nav {
-    padding: 10px 0 0 65px;
+    padding: 1% 0 0 4%;
 
     h3 {
         @include planted-in-nav;
@@ -18,11 +18,11 @@
         
 
         li {
-            padding: 10px 30px;
+            padding: 1% 2%;
             @include yellow-hover;
 
             &:first-child {
-                padding-left: 60px;
+                padding-left: 5%;
             }
         
         }

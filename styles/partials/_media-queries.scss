@@ -1,11 +1,10 @@
 //// GENERAL SECTIONS ACROSS ALL PAGES ////
 
-.flex-master {
-    @include breakpoint (range1) {
-        display: block;
-    }
-
-}
+// .flex-master {
+//     @include breakpoint (range1) {
+//         display: initial;
+//     }
+// }
 // NAV section //
 
 
@@ -15,13 +14,12 @@
     }
 
     @include breakpoint (range2) {
-        padding: 0;
-        margin: 0 auto;
+   
     }
 
     ul li {
         @include breakpoint (range2) {
-            padding: 0;
+           
         }
     }
 }
@@ -87,10 +85,6 @@ header.blog-page {
             padding: 0;
             text-align: center;
         }
-
-        @include breakpoint (range2) {
-
-        }
     }
 }
 
@@ -123,7 +117,7 @@ header.contact-page {
 
 .what-is-planted {
     @include breakpoint (range1) {
-        padding: 0;
+        padding: 3%;
     }
 
     .text-section h2 {
@@ -134,14 +128,47 @@ header.contact-page {
 }
 
 // "Events" section
-.event {
+
+
+.events {
+    .flex-master {
+        @include breakpoint (range1) {
+             display: block;
+        }
+    }
+
     @include breakpoint (range2) {
         padding: 30px;
     }
-    .events-images-1 {
-        @include breakpoint (range2) {    
+    .events-image-1 {
+        @include breakpoint (range1) {
+            width: auto;
+            position: initial;
+            margin-top: 1%;
+        }
+        
+        img {
+            @include breakpoint (range1) {    
+            box-shadow: none;
         }
     }
+}
+
+    .events-image-2 {
+        @include breakpoint (range1) {
+            width: auto;
+            position: initial;
+            margin-top: 1%;
+        }
+
+        img {
+            @include breakpoint (range1) {
+                box-shadow: none;
+                padding-top: 4%;
+            }
+        }
+    }
+
 
     .text-section-1,
     .text-section-2 {
@@ -161,6 +188,7 @@ header.contact-page {
         h3 {
             @include breakpoint (range1) {
                 @include section-heading (1.2rem, 700, normal, normal, normal);
+
             }
         }
     }
@@ -169,28 +197,58 @@ header.contact-page {
 
 // "Services" section
 
+.services {
+    .flex-master {
+        @include breakpoint (range1) {
+            display: block;
+            padding: 0;
+        }
+    }
+}
+
 .service-1,
 .service-2,
 .service-3,
 .service-4 {
+
+    h3 {
+        @include breakpoint (range1) {
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+    }
     h3::before {
         @include breakpoint (range1) {
             display: none;
         }
+        }
+    p {
+        @include breakpoint (range1) {
+            width: 300px;
+            padding: 0;
+            margin: 0;
+        }   
     }
-}
+    }
 // "Founder" section
 
 .fullbleed-image img {
    @include breakpoint (range1) {
-    width: 320px;
+    display: none;
    }
 }
 
 .founder {
+    .flex-master {
+        @include breakpoint (range1) {
+            display: block;
+        }
+    }
 
     .founder-image {
         @include breakpoint (range1) {
+            text-align: center; 
             margin: 0;
             padding: 0;
         }
@@ -199,14 +257,73 @@ header.contact-page {
             width: 120%;
             padding-left: 0;
         }
+    
+        img {
+            @include breakpoint (range1) {
+                box-shadow: none;
+            }
+        }
     }
-} 
 
-.founder-image {
-    img {
+    .founder-text {
         @include breakpoint (range1) {
-            width: 320px;
+            width: 100%; 
+            text-align: center;
+        }
+
+        h3 {
+            @include breakpoint (range1) {
+                @include section-heading (1.3rem, 700, normal, 0.04rem, normal);
+                width: 100%;
+                padding-top: 10%;
+                margin: 0;
+            }
+
+        }
+           
+    }
+}
+
+// Planted Gallery // 
+
+.grid-gallery-images {
+    @include breakpoint (range1) {
+        padding: 1%;
+    }
+    .gallery-image:nth-child(2) {
+        @include breakpoint (range1) {
+            display: none;
         }
     }
 }
     
+
+//// BLOG PAGE ////
+
+aside {
+    @include breakpoint (range2) {
+        float: none;
+    }
+    .sidebar-image {
+        @include breakpoint (range2) {
+            position: none;
+            z-index: 0;
+        }
+    }
+
+    .sidebar-alltext-wrapper {
+        @include breakpoint (range2) {
+            padding-top: 450px;
+            width: auto;
+            margin: 0;
+        }
+    }
+
+    .sidebar-text {
+        @include breakpoint (range2) {
+            width: 100%;
+            padding-left: 0;
+            margin: 0;
+        }
+    }
+}
