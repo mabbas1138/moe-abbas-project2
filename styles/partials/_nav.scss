@@ -3,9 +3,7 @@
     padding: 10px 0 0 65px;
 
     h3 {
-        display: block;
-        float: left;
-        padding-left: 90px;
+        @include planted-in-nav;
 
     }
     ul {

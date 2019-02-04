@@ -367,7 +367,11 @@ li {
   padding: 10px 0 0 65px; }
   .site-nav h3 {
     display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #f0efed;
     float: left;
+    margin: 0;
     padding-left: 90px; }
   .site-nav ul {
     display: -webkit-box;
@@ -396,11 +400,6 @@ header.home-page {
   position: relative;
   background-image: url(../assets/home-image-1.jpg);
   min-height: 100vh; }
-  header.home-page h3 {
-    font-size: 2rem;
-    color: #f0efed;
-    font-weight: 400;
-    margin: 0; }
 
 .home-h1-style {
   margin: 0;
@@ -413,7 +412,7 @@ header.home-page {
     letter-spacing: normal;
     line-height: 0.75;
     color: #f8e71c;
-    margin-top: 200px;
+    margin: 300px 0 0 150px;
     z-index: 10; }
     .home-h1-style h1 .white {
       color: #f0efed;
@@ -435,10 +434,13 @@ header.blog-page {
   background-image: url(../assets/blog-header-1.jpg);
   min-height: 70vh; }
   header.blog-page h3 {
+    display: block;
     font-size: 2rem;
-    color: #f0efed;
     font-weight: 400;
-    margin: 0; }
+    color: #f0efed;
+    float: left;
+    margin: 0;
+    padding-left: 90px; }
   header.blog-page .page-h1-style {
     margin: 250px 0 0 150px;
     padding: 0;
@@ -460,11 +462,6 @@ header.contact-page {
   position: relative;
   background-image: url(../assets/contact-header-1.jpg);
   min-height: 50vh; }
-  header.contact-page h3 {
-    font-size: 2rem;
-    color: #f0efed;
-    font-weight: 400;
-    margin: 0; }
   header.contact-page .page-h1-style {
     margin: 250px 0 0 150px;
     padding: 0;
@@ -478,6 +475,9 @@ header.contact-page {
       color: #f8e71c; }
       header.contact-page .page-h1-style h1 .block {
         display: block; }
+        @media (min-width: 320px) and (max-width: 768px) {
+          header.contact-page .page-h1-style h1 .block {
+            display: none; } }
 
 .what-is-planted {
   background: #f0efed;
@@ -831,5 +831,88 @@ aside {
   .copyrightContainer p {
     margin: 0;
     padding: 5px; }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .flex-master {
+    display: block; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .site-nav {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header.home-page,
+  header.blog-page,
+  header.contact-page {
+    background-size: cover;
+    background-position: cover;
+    width: auto; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .home-h1-style {
+    margin: 0;
+    padding: 0;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .home-h1-style h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 200px auto;
+    text-align: center;
+    z-index: 0; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .intruder-plant {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header.blog-page .page-h1-style {
+    margin: 0;
+    padding: 0;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header.contact-page {
+    margin: 0;
+    padding: 0;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header.contact-page h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-top: 80px;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  header.contact-page h1 .block {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .what-is-planted {
+    padding: 0; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .what-is-planted .text-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: normal; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .event .text-section-1,
+  .event .text-section-2 {
+    width: 320px;
+    max-width: 100%;
+    margin: 0;
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */

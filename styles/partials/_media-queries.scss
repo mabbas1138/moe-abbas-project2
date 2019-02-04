@@ -1,0 +1,130 @@
+//// GENERAL SECTIONS ACROSS ALL PAGES ////
+
+.flex-master {
+    @include breakpoint (range1) {
+        display: block;
+    }
+}
+// NAV section //
+
+.site-nav {
+    @include breakpoint (range1) {
+        display: none;
+    }
+}
+
+
+// HEADER section //
+
+// Home header //
+
+header.home-page,
+header.blog-page,
+header.contact-page {
+    @include breakpoint (range1) {
+        background-size: cover;
+        background-position: cover;       
+        width: auto; 
+    }
+}
+
+.home-h1-style {
+    @include breakpoint (range1) {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        @include breakpoint (range1) {
+            @include section-heading (3rem, 400, center, normal, normal);
+            margin: 200px auto;
+            text-align: center;
+            z-index: 0;
+        }
+    }
+}
+
+.intruder-plant {
+    @include breakpoint (range1) {
+        display: none;
+    }
+}
+
+// Blog header // 
+
+// header.blog-page {
+//     @include breakpoint (range1) {
+//         background-size: cover;
+//         background-position: cover;       
+//         width: auto; 
+//     }
+// }
+
+header.blog-page {
+
+    .page-h1-style {
+        @include breakpoint (range1) {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+}
+
+// Contact header // 
+
+header.contact-page {
+
+    @include breakpoint (range1) {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 { 
+      @include breakpoint (range1) {
+            @include section-heading (2rem, 400, center, normal, normal);
+                padding-top: 80px;
+                text-align: center;
+            }
+
+        .block {
+            @include breakpoint (range1) {
+                display: none;
+            }   
+        }
+    }
+}
+
+//// HOME PAGE ////
+
+.what-is-planted {
+    @include breakpoint (range1) {
+        padding: 0;
+    }
+
+    .text-section h2 {
+        @include breakpoint (range1) {
+            @include section-heading (1.5rem, 700, center, 1px, normal);
+        }
+    }
+}
+
+// "Events" section
+.event {
+    // .events-images-1 {
+    //     @include breakpoint (range1) {
+    //         position: 
+    //     }
+
+    .text-section-1,
+    .text-section-2 {
+        @include breakpoint (range1) {
+            width: 320px;
+            max-width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

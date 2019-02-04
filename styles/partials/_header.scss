@@ -5,10 +5,6 @@ header.home-page {
     @include header-style;
     background-image: url(../assets/home-image-1.jpg);
     min-height: 100vh;
-
-    h3 {
-        @include planted-in-nav;
-    }
 }
 
 .home-h1-style {
@@ -19,7 +15,7 @@ header.home-page {
     h1 {
         @include section-heading (8.3rem, 400, left, normal, 0.75);
         color: $tertiary;
-        margin-top: 200px;
+        margin: 300px 0 0 150px;
         z-index:10;
     
         .white {
@@ -48,7 +44,6 @@ header.blog-page {
         @include planted-in-nav;
     }
 
-
     .page-h1-style {
         margin: 250px 0 0 150px;
         padding: 0;
@@ -57,6 +52,7 @@ header.blog-page {
         h1 {
             @include section-heading (4rem, 700, left, normal, 92px);
             color: $tertiary;   
+
         }
     }
 }
@@ -69,11 +65,6 @@ header.contact-page {
     background-image: url(../assets/contact-header-1.jpg);
     min-height: 50vh;
 
-    h3 {
-        @include planted-in-nav;
-    }
-
-
     .page-h1-style {
         margin: 250px 0 0 150px;
         padding: 0;
@@ -82,12 +73,14 @@ header.contact-page {
         h1 {
             @include section-heading (4rem, 700, left, normal, normal);
             color: $tertiary;
-           
 
             .block {
                 display: block;
+
+                @include breakpoint (range1) {
+                    display: none;
             }
         }
     }
 }
-
+}

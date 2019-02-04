@@ -28,10 +28,14 @@ $body-font: 'Roboto', sans-serif;
 }
 
 @mixin planted-in-nav {
+    display: block;
     font-size: 2rem;
-    color: $secondary;
     font-weight: 400;
+    color: $secondary;
+    float: left;
     margin: 0;
+    padding-left: 90px;
+
 }
 
 @mixin full-bleed ($background-position) {
@@ -85,4 +89,8 @@ $body-font: 'Roboto', sans-serif;
     }
 }
 
-
+@mixin breakpoint ($class) {
+    @if $class == range1 {
+        @media(min-width: 320px) and (max-width: 768px) { @content; }
+    }
+}
