@@ -1,7 +1,4 @@
-//// GENERAL SECTIONS ACROSS ALL PAGES ////
-
-
-// NAV section //
+// NAVIGATION BAR //
 
 .site-nav {
     @include breakpoint (range1) {
@@ -11,6 +8,17 @@
     ul li {
         @include breakpoint (range2) {
             padding: 2.5% 2%;
+        }
+    }
+}
+
+// FOOTER //
+
+.copyrightContainer {
+    p {
+        @include breakpoint (range1) {
+            padding: 0;
+            font-size: 0.5rem;
         }
     }
 }
@@ -455,6 +463,12 @@ aside {
         display: block;
     }
 
+    @include breakpoint (range2) {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
     .our-mission-post {
         @include breakpoint (range1) {
             position: initial;
@@ -479,6 +493,13 @@ aside {
         @include breakpoint (range2) {
             width: 100%;
         }
+        
+        img {
+            @include breakpoint (range2) {
+                box-shadow: none;
+            }
+        }
+        
     }
 
     .blog-post {
@@ -489,7 +510,7 @@ aside {
         }
 
         @include breakpoint (range2) {
-            padding: 4%;
+            // padding: 4%;
             text-align: center;
             box-shadow: none;
         }
@@ -508,11 +529,19 @@ aside {
     }
 }
 
+/////// COMMENTS ///////
+
 .comments {
     @include breakpoint (range1) {
         padding: 0;
     }
 
+    @include breakpoint (range2) {
+        width: auto;
+        margin: 0;
+        padding: 3%;
+
+    }
 }
 
 .jeremy,
@@ -557,9 +586,21 @@ aside {
         padding: 0 0 0 4%;
     }
 
+    @include breakpoint (range2) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 3% 5%;
+    }
+
     input[type=text],
     input[type=email] {
         @include breakpoint (range1) {
+            width: 95%;
+            margin: 0;
+            padding: 0;
+        }
+
+        @include breakpoint (range2) {
             width: 95%;
             margin: 0;
             padding: 0;
@@ -571,16 +612,10 @@ aside {
             margin-bottom: 5%;
         }
     }
-}
 
-
-// Footer -- Copyright // 
-
-.copyrightContainer {
-    p {
-        @include breakpoint (range1) {
-            padding: 0;
-            font-size: 0.5rem;
+    input[type=email] {
+        @include breakpoint (range2) {
+            margin-bottom: 5%;
         }
     }
 }
@@ -588,10 +623,6 @@ aside {
 ///////////////// CONTACT PAGE //////////////////////
 
 .contact-inner-wrapper {
-    @include breakpoint (range1) {
-        height: 100vh;
-    }
-
     main {
        @include breakpoint (range1) {
            display: block;
@@ -645,12 +676,16 @@ aside {
     }
 
     input[type=submit] {
-        margin-top: 10px;
+        @include breakpoint (range1) {
+            margin-top: 2%;
+        }
+        
     }
 }
 
 
 
+
+
 //// THE END ////
 //// THANK YOU FOR READING MY CODE ////
-

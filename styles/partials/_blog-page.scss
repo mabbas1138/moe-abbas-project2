@@ -94,6 +94,9 @@ aside {
     }
 }
 
+.date-writer-color {
+    color: $quinary;
+}
 
 // User Comments section
 .comments {
@@ -155,7 +158,6 @@ aside {
         width: 95%; 
         padding: 2%;
         border: 1px solid $quaternary;
-        
     }
 
     input[type=submit] {

@@ -710,6 +710,9 @@ aside {
       letter-spacing: 0.05rem;
       line-height: normal; }
 
+.date-writer-color {
+  color: #074115; }
+
 .comments {
   padding-left: 40%; }
   .comments h3 {
@@ -785,8 +788,7 @@ aside {
     padding: 1%; }
 
 .contact-inner-wrapper {
-  background: #f0efed;
-  height: 50vh; }
+  background: #f0efed; }
   .contact-inner-wrapper main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -811,9 +813,14 @@ aside {
   flex-direction: row; }
 
 .social-media-links li {
-  padding: 1% 2% 1% 0; }
+  padding: 3% 3% 3% 0.5%; }
   .social-media-links li a {
     color: #0e902d; }
+  .social-media-links li a:hover {
+    color: #f8e71c;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
 
 .contact-info {
   margin-top: 10%; }
@@ -885,6 +892,11 @@ aside {
 @media (min-width: 769px) and (max-width: 870px) {
   .site-nav ul li {
     padding: 2.5% 2%; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .copyrightContainer p {
+    padding: 0;
+    font-size: 0.5rem; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   header.home-page,
@@ -1233,6 +1245,12 @@ header.blog-page .page-h1-style h1 {
     width: auto;
     display: block; } }
 
+@media (min-width: 769px) and (max-width: 870px) {
+  .blog {
+    width: 90%;
+    display: block;
+    margin: 0 auto; } }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .blog .our-mission-post {
     position: initial; } }
@@ -1255,6 +1273,11 @@ header.blog-page .page-h1-style h1 {
   .blog .our-mission-image {
     width: 100%; } }
 
+@media (min-width: 769px) and (max-width: 870px) {
+  .blog .our-mission-image img {
+    -webkit-box-shadow: none;
+    box-shadow: none; } }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .blog .blog-post {
     padding: 4%;
@@ -1264,7 +1287,6 @@ header.blog-page .page-h1-style h1 {
 
 @media (min-width: 769px) and (max-width: 870px) {
   .blog .blog-post {
-    padding: 4%;
     text-align: center;
     -webkit-box-shadow: none;
     box-shadow: none; } }
@@ -1284,6 +1306,12 @@ header.blog-page .page-h1-style h1 {
 @media (min-width: 320px) and (max-width: 768px) {
   .comments {
     padding: 0; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .comments {
+    width: auto;
+    margin: 0;
+    padding: 3%; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .jeremy,
@@ -1316,7 +1344,20 @@ header.blog-page .page-h1-style h1 {
   .communication-form {
     padding: 0 0 0 4%; } }
 
+@media (min-width: 769px) and (max-width: 870px) {
+  .communication-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 3% 5%; } }
+
 @media (min-width: 320px) and (max-width: 768px) {
+  .communication-form input[type=text],
+  .communication-form input[type=email] {
+    width: 95%;
+    margin: 0;
+    padding: 0; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
   .communication-form input[type=text],
   .communication-form input[type=email] {
     width: 95%;
@@ -1327,14 +1368,9 @@ header.blog-page .page-h1-style h1 {
   .communication-form input[type=email] {
     margin-bottom: 5%; } }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .copyrightContainer p {
-    padding: 0;
-    font-size: 0.5rem; } }
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .contact-inner-wrapper {
-    height: 100vh; } }
+@media (min-width: 769px) and (max-width: 870px) {
+  .communication-form input[type=email] {
+    margin-bottom: 5%; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .contact-inner-wrapper main {
@@ -1370,7 +1406,8 @@ header.blog-page .page-h1-style h1 {
   .contact-form input[type=email] {
     margin-bottom: 5%; } }
 
-.contact-form input[type=submit] {
-  margin-top: 10px; }
+@media (min-width: 320px) and (max-width: 768px) {
+  .contact-form input[type=submit] {
+    margin-top: 2%; } }
 
 /*# sourceMappingURL=styles.css.map */

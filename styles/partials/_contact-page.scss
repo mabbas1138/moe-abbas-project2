@@ -2,7 +2,6 @@
 
 .contact-inner-wrapper {
     background: $secondary;
-    height: 50vh;
 
     main {
         display: flex;
@@ -23,11 +22,15 @@
     }
     
     li {
-        padding: 1% 2% 1% 0;
+        padding: 3% 3% 3% 0.5%;
             
             a {
                 color: $quaternary;
-                
+            }
+
+            a:hover {
+                color: $tertiary;
+                transition: 0.25s;
             }
     }
 }
@@ -70,7 +73,7 @@
     }
 
        input[type=email] {
-        margin-left: 2;
+            margin-left: 2;
     }
 
     textarea {
