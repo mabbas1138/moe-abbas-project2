@@ -345,7 +345,6 @@ header.contact-page {
 // Sidebar //
 
 aside {
-
     @include breakpoint (range1) {
         width: 90%;
         margin: 0 auto;
@@ -353,20 +352,39 @@ aside {
         float: none;
     }
 
+    @include breakpoint (range-special) {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3%;
+        float: none;
+    }
+
     @include breakpoint (range2) {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2%;
         float: none;
     }
 
     .sidebar-image {
         @include breakpoint (range1) {
-            width: 100%;
+            width: auto;
             margin: 0;
             text-align: center;
             position: none;
             z-index: 0;
         }
 
+        @include breakpoint (range-special) {
+            width: 100%;
+            margin: 0;
+            position: none;
+            z-index: 0;
+        }
+
         @include breakpoint (range2) {
+            width: 100%;
+            text-align: center;
             position: none;
             z-index: 0;
         }
@@ -386,23 +404,43 @@ aside {
             }
         }
 
-        @include breakpoint (range2) {
-            padding-top: 450px;
-            width: auto;
-            margin: 0;
-        }
-    }
+            @include breakpoint (range2) {
+                width: auto;
+                padding-top: 10px;
+                margin: 0;
+                text-align: center;
+            }
 
-    .sidebar-text {
-        @include breakpoint (range2) {
-            width: 100%;
-            padding-left: 0;
-            margin: 0;
+        .sidebar-text {
+            @include breakpoint (range2) {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
         }
     }
 }
 
-// Blog Poist // 
+.recent-posts {
+    @include breakpoint (range2) {
+        padding-left: 0;
+    }
+    h3 {
+        @include breakpoint (range2) {
+        padding-left: none;
+        }
+    }
+
+    ul li {
+        @include breakpoint (range2) {
+            margin: 2% 2%;
+        }
+    }
+
+    
+}
+
+// Blog Post // 
 
 .blog {
     @include breakpoint (range1) {
@@ -410,8 +448,38 @@ aside {
         display: block;
     }
 
+    .our-mission-post {
+        @include breakpoint (range1) {
+            position: initial;
+            
+        }
+
+        @include breakpoint (range2) {
+            position: initial;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    .our-mission-image {
+        @include breakpoint (range1) {
+            display: none;
+        }
+
+        @include breakpoint (range2) {
+            width: 100%;
+            
+        }
+    }
+
     .blog-post {
         @include breakpoint (range1) {
+            padding: 4%;
+            text-align: center;
+            box-shadow: none;
+        }
+
+        @include breakpoint (range2) {
             padding: 4%;
             text-align: center;
             box-shadow: none;
@@ -429,46 +497,66 @@ aside {
             }
         }
     }
+}
 
-    .our-mission-post {
+.comments {
+    @include breakpoint (range1) {
+        padding: 0;
+    }
+
+}
+
+.jeremy,
+.julia {
+    @include breakpoint (range1) {
+        display: block;
+        text-align: center;
+    }
+
+    h2 {
         @include breakpoint (range1) {
-            position: initial;
+            font-size: 0.8rem;
         }
     }
 
-    .our-mission-image {
+    p {
         @include breakpoint (range1) {
-            display: none;
+            font-size: 0.8rem;
         }
     }
 }
 
-
-
-@include breakpoint (range1) {
-    .comments {
-        padding: 0;
-    }
-
-    .communication-form {
-        padding-left: 5%;
+.jeremy-image, 
+.julia-image {
+    @include breakpoint (range1) {
+        padding:  0;
     }
 }
 
-@include breakpoint (range-special) {
-
-    aside {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 3%;
-        float: none;
-    }
-
-    .comments {
+.jeremy-comment-all,
+.julia-comment-all {
+    @include breakpoint (range1) {
+        width: 100%;
         padding: 0;
     }
+}
 
-    .communication-form {
-        padding-left: 5%;
+// User Comment Section //
+
+.communication-form {
+    @include breakpoint (range1) {
+        padding: 0 0 0 4%;
+    }
+}
+
+
+// Footer -- Copyright // 
+
+.copyrightContainer {
+    p {
+        @include breakpoint (range1) {
+            padding: 0;
+            font-size: 0.5rem;
+        }
     }
 }

@@ -1167,11 +1167,14 @@ header.blog-page .page-h1-style h1 {
 
 @media (min-width: 769px) and (max-width: 870px) {
   aside {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2%;
     float: none; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   aside .sidebar-image {
-    width: 100%;
+    width: auto;
     margin: 0;
     text-align: center;
     position: none;
@@ -1179,6 +1182,8 @@ header.blog-page .page-h1-style h1 {
 
 @media (min-width: 769px) and (max-width: 870px) {
   aside .sidebar-image {
+    width: 100%;
+    text-align: center;
     position: none;
     z-index: 0; } }
 
@@ -1194,15 +1199,28 @@ header.blog-page .page-h1-style h1 {
 
 @media (min-width: 769px) and (max-width: 870px) {
   aside .sidebar-alltext-wrapper {
-    padding-top: 450px;
     width: auto;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  aside .sidebar-alltext-wrapper .sidebar-text {
+    width: 100%;
+    padding: 0;
     margin: 0; } }
 
 @media (min-width: 769px) and (max-width: 870px) {
-  aside .sidebar-text {
-    width: 100%;
-    padding-left: 0;
-    margin: 0; } }
+  .recent-posts {
+    padding-left: 0; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .recent-posts h3 {
+    padding-left: none; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .recent-posts ul li {
+    margin: 2% 2%; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .blog {
@@ -1210,6 +1228,31 @@ header.blog-page .page-h1-style h1 {
     display: block; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .blog .our-mission-post {
+    position: initial; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .blog .our-mission-post {
+    position: initial;
+    text-align: center;
+    margin: 0 auto; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .blog .our-mission-image {
+    display: none; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
+  .blog .our-mission-image {
+    width: 100%; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .blog .blog-post {
+    padding: 4%;
+    text-align: center;
+    -webkit-box-shadow: none;
+    box-shadow: none; } }
+
+@media (min-width: 769px) and (max-width: 870px) {
   .blog .blog-post {
     padding: 4%;
     text-align: center;
@@ -1229,28 +1272,43 @@ header.blog-page .page-h1-style h1 {
     font-size: 0.8rem; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .blog .our-mission-post {
-    position: initial; } }
+  .comments {
+    padding: 0; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .blog .our-mission-image {
-    display: none; } }
+  .jeremy,
+  .julia {
+    display: block;
+    text-align: center; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .comments {
-    padding: 0; }
-  .communication-form {
-    padding-left: 5%; } }
+  .jeremy h2,
+  .julia h2 {
+    font-size: 0.8rem; } }
 
-@media (min-width: 699px) and (max-width: 791px) {
-  aside {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 3%;
-    float: none; }
-  .comments {
-    padding: 0; }
+@media (min-width: 320px) and (max-width: 768px) {
+  .jeremy p,
+  .julia p {
+    font-size: 0.8rem; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .jeremy-image,
+  .julia-image {
+    padding: 0; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .jeremy-comment-all,
+  .julia-comment-all {
+    width: 100%;
+    padding: 0; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
   .communication-form {
-    padding-left: 5%; } }
+    padding: 0 0 0 4%; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .copyrightContainer p {
+    padding: 0;
+    font-size: 0.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -87,10 +87,6 @@ $body-font: 'Roboto', sans-serif;
         @media(min-width: 320px) and (max-width: 768px) { @content; }
     }
 
-    @else if $class == range-special {
-        @media(min-width: 699px) and (max-width: 791px) { @content;}
-    }
-
     @else if $class == range2 {
         @media(min-width: 769px) and (max-width: 870px) { @content; }
     }
