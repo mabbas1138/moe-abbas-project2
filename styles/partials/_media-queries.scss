@@ -342,6 +342,8 @@ header.contact-page {
 
 //// BLOG PAGE ////
 
+// Sidebar //
+
 aside {
 
     @include breakpoint (range1) {
@@ -357,6 +359,9 @@ aside {
 
     .sidebar-image {
         @include breakpoint (range1) {
+            width: 100%;
+            margin: 0;
+            text-align: center;
             position: none;
             z-index: 0;
         }
@@ -394,5 +399,76 @@ aside {
             padding-left: 0;
             margin: 0;
         }
+    }
+}
+
+// Blog Poist // 
+
+.blog {
+    @include breakpoint (range1) {
+        width: auto;
+        display: block;
+    }
+
+    .blog-post {
+        @include breakpoint (range1) {
+            padding: 4%;
+            text-align: center;
+            box-shadow: none;
+        }
+
+        h2 {
+            @include breakpoint (range1) {
+                @include section-heading (1.2rem, 700, normal, 0.05rem, normal);
+            }
+        }
+
+        p {
+            @include breakpoint (range1) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .our-mission-post {
+        @include breakpoint (range1) {
+            position: initial;
+        }
+    }
+
+    .our-mission-image {
+        @include breakpoint (range1) {
+            display: none;
+        }
+    }
+}
+
+
+
+@include breakpoint (range1) {
+    .comments {
+        padding: 0;
+    }
+
+    .communication-form {
+        padding-left: 5%;
+    }
+}
+
+@include breakpoint (range-special) {
+
+    aside {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3%;
+        float: none;
+    }
+
+    .comments {
+        padding: 0;
+    }
+
+    .communication-form {
+        padding-left: 5%;
     }
 }

@@ -20,8 +20,6 @@ aside {
         width: 70%;
         margin: 0 0 20% 20%;
        
-
-
         .sidebar-text {
             width: 80%;
             padding-left: 7%;
@@ -60,7 +58,7 @@ aside {
     }
 }
 
-// BLOG POST
+// Blog Post //
 
 .our-mission-post {
         position: relative;
@@ -76,12 +74,12 @@ aside {
     }
 }
 
+// NOTE TO SELF: MOVE BELOW TO BEFORE OUR MISSION
+
 .blog {
     width: 60%;
     display: flex;
     flex-direction: row;
-  
-    
 
     .blog-post {
         padding: 5%;
@@ -97,7 +95,7 @@ aside {
 }
 
 
-// VISITOR COMMENTS SECTION
+// Visition Comments section
 .comments {
     padding-left: 40%;
 

@@ -1,18 +1,10 @@
 
 
-LOOK UP: Change margin and padding values to rems? LOOK UP
-
-LOOK UP: Change margin and padding values to %?
-
-LOOK UP: setting images as max-width 100%
-
-
 
 *** ADD INNER WRAPPER ***
 
 TO DO
 
-> Change to rems on margins and padding
 
 > Change flex-master global as mixin and update html accordingly
 
@@ -33,6 +25,9 @@ TO DO
 
 QUESTIONS
 
-> Ask what to use to break up the contact h1 into two lines?
+> Should I restructure the queries like the following:
 
-> Why can't I resize the images while doing responsive? Does it have to do with img max-width: 100%?
+@include breakpoint (range1) {
+    (sections, etc.)
+}
+
