@@ -5,6 +5,9 @@
 
 TO DO
 
+> **Change line height on reduced font sizes**
+
+> **SEE IF YOU CAN USE TEXT ALIGN:CENTER/ETC. INSTEAD OF PADDING**
 
 > Change flex-master global as mixin and update html accordingly
 

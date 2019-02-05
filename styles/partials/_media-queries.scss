@@ -16,9 +16,9 @@
 }
 
 
-// HEADER section //
+// HEADER //
 
-// Home header //
+/////////////////// HOME PAGE header ///////////////////
 
 header.home-page,
 header.blog-page,
@@ -65,10 +65,9 @@ header.contact-page {
     }
 }
 
-// Blog header // 
+//////////////////// BLOG PAGE header //////////////
 
 header.blog-page {
-
     .page-h1-style {
         @include breakpoint (range1) {
             margin: 10vh;
@@ -80,32 +79,40 @@ header.blog-page {
     }
 }
 
-// Contact header // 
+////////////// CONTACT PAGE header /////////////
 
 header.contact-page {
-
     @include breakpoint (range1) {
         margin: 0;
         padding: 0;
-        text-align: center;
+        text-align: left;
     }
 
-    h1 { 
-      @include breakpoint (range1) {
-            @include section-heading (2rem, 400, center, normal, normal);
-                padding-top: 80px;
-                text-align: center;
+    .page-h1-style {
+        @include breakpoint (range1) {
+            margin: 0 auto;
+            padding-top: 25%;
+        }
+    
+        h1 { 
+            @include breakpoint (range1) {
+                @include section-heading (2rem, 700, left, normal, normal);
+                text-align:center;
             }
 
-        .block {
-            @include breakpoint (range1) {
-                display: none;
-            }   
+        
+            .block {
+                @include breakpoint (range1) {
+                    display: block;
+                }   
+            }
         }
     }
 }
 
-//// HOME PAGE ////
+///////////////////////////// MAIN AND OTHER CONTENT ////////////////////
+
+//////////// HOME PAGE /////////////
 
 .what-is-planted {
     @include breakpoint (range1) {
@@ -245,6 +252,7 @@ header.contact-page {
         }   
     }
 }
+
 // "Founder" section
 
 .fullbleed-image img {
@@ -338,9 +346,10 @@ header.contact-page {
         }
     }
 }
-    
 
-//// BLOG PAGE ////
+
+/////////////////////// BLOG PAGE //////////////////////////
+
 
 // Sidebar //
 
@@ -436,11 +445,9 @@ aside {
             margin: 2% 2%;
         }
     }
-
-    
 }
 
-// Blog Post // 
+/////// BLOG /////////
 
 .blog {
     @include breakpoint (range1) {
@@ -451,13 +458,16 @@ aside {
     .our-mission-post {
         @include breakpoint (range1) {
             position: initial;
-            
         }
 
         @include breakpoint (range2) {
             position: initial;
             text-align: center;
             margin: 0 auto;
+        }
+
+        @include breakpoint (range3) {
+            margin-left: 40px;
         }
     }
 
@@ -468,7 +478,6 @@ aside {
 
         @include breakpoint (range2) {
             width: 100%;
-            
         }
     }
 
@@ -547,6 +556,21 @@ aside {
     @include breakpoint (range1) {
         padding: 0 0 0 4%;
     }
+
+    input[type=text],
+    input[type=email] {
+        @include breakpoint (range1) {
+            width: 95%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    input[type=email] {
+        @include breakpoint (range1) {
+            margin-bottom: 5%;
+        }
+    }
 }
 
 
@@ -560,3 +584,73 @@ aside {
         }
     }
 }
+
+///////////////// CONTACT PAGE //////////////////////
+
+.contact-inner-wrapper {
+    @include breakpoint (range1) {
+        height: 100vh;
+    }
+
+    main {
+       @include breakpoint (range1) {
+           display: block;
+       }
+    }
+}
+
+// Social media links //
+
+.social-media-links {
+    ul {
+        @include breakpoint (range1) {
+            justify-content: space-around;
+        }
+    }
+}
+
+// Contact info //
+
+.contact-info {
+    @include breakpoint (range1) {
+        text-align: center;
+        padding-right: 5%;
+        margin: 0 auto;
+    }
+}
+
+// Contact form //
+
+.contact-form {
+    @include breakpoint (range1) {
+        position: initial;
+        width: 95%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    input[type=text],
+    input[type=email] {
+        @include breakpoint (range1) {
+            width: 95%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    input[type=email] {
+        @include breakpoint (range1) {
+            margin-bottom: 5%;
+        }
+    }
+
+    input[type=submit] {
+        margin-top: 10px;
+    }
+}
+
+
+
+//// THE END ////
+//// THANK YOU FOR READING MY CODE ////
+

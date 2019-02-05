@@ -14,19 +14,21 @@
 
 .contact-info-all {
     padding: 5% 0 0 5%;
-    nav ul {
+}
+
+.social-media-links {
+    ul {
         display: flex;
         flex-direction: row;
-
-        li {
-            padding: 1% 2% 1% 0;
-
-
+    }
+    
+    li {
+        padding: 1% 2% 1% 0;
+            
             a {
                 color: $quaternary;
                 
             }
-        }
     }
 }
 
