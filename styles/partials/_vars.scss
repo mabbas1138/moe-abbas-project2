@@ -90,4 +90,16 @@ $body-font: 'Roboto', sans-serif;
     @else if $class == range2 {
         @media(min-width: 769px) and (max-width: 870px) { @content; }
     }
+
+    @else if $class == range3 {
+        @media(min-width: 871px) and (max-width: 1087px) { @content; }
+    }
+
+    @else if $class == range4 {
+        @media(min-width: 1088px) and (max-width: 1260px) { @content; }
+    }
+
+    @else if $class == range5 {
+        @media(min-width: 1260px) and (max-width: 1440px) { @content; }
+    }
 }

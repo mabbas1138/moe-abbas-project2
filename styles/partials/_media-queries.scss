@@ -1,25 +1,16 @@
 //// GENERAL SECTIONS ACROSS ALL PAGES ////
 
-// .flex-master {
-//     @include breakpoint (range1) {
-//         display: initial;
-//     }
-// }
-// NAV section //
 
+// NAV section //
 
 .site-nav {
     @include breakpoint (range1) {
         display: none;
     }
 
-    @include breakpoint (range2) {
-   
-    }
-
     ul li {
         @include breakpoint (range2) {
-           
+            padding: 2.5% 2%;
         }
     }
 }
@@ -50,13 +41,12 @@ header.contact-page {
         @include breakpoint (range1) {
             @include section-heading (3rem, 400, center, normal, normal);
             margin: 200px auto;
-            text-align: center;
             z-index: 0;
         }
 
         @include breakpoint (range2) {
-            margin: 130px auto;
-            text-align: left;
+        @include section-heading (6rem, 400, left, normal, 0.75);
+            margin: 20% 0 0 10%;
         }
     }
 }
@@ -65,25 +55,27 @@ header.contact-page {
     @include breakpoint (range1) {
         display: none;
     }
+
+    @include breakpoint (range4) {
+        margin-top: -5%;
+    }
+
+    @include breakpoint (range5) {
+        margin-top: -5%;
+    }
 }
 
 // Blog header // 
-
-// header.blog-page {
-//     @include breakpoint (range1) {
-//         background-size: cover;
-//         background-position: cover;       
-//         width: auto; 
-//     }
-// }
 
 header.blog-page {
 
     .page-h1-style {
         @include breakpoint (range1) {
-            margin: 0;
-            padding: 0;
-            text-align: center;
+            margin: 10vh;
+        }
+
+        h1 {
+            @include section-heading (3rem, 700, left, normal, normal)
         }
     }
 }
@@ -129,6 +121,21 @@ header.contact-page {
 
 // "Events" section
 
+.event-2 {
+    @include breakpoint (range1) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include breakpoint (range1) {
+        .text-section-2 {
+            order: 2;
+        }
+
+        .events-image-2 {
+            order: 1;
+        }
+    }
+}
 
 .events {
     .flex-master {
@@ -145,6 +152,7 @@ header.contact-page {
             width: auto;
             position: initial;
             margin-top: 1%;
+            text-align: center;
         }
         
         img {
@@ -159,6 +167,7 @@ header.contact-page {
             width: auto;
             position: initial;
             margin-top: 1%;
+            text-align: center;
         }
 
         img {
@@ -173,8 +182,7 @@ header.contact-page {
     .text-section-1,
     .text-section-2 {
         @include breakpoint (range1) {
-            width: 320px;
-            max-width: 100%;
+            width: auto;
             margin: 0;
             text-align: center;
         }
@@ -202,6 +210,7 @@ header.contact-page {
         @include breakpoint (range1) {
             display: block;
             padding: 0;
+            margin: 0;
         }
     }
 }
@@ -210,27 +219,32 @@ header.contact-page {
 .service-2,
 .service-3,
 .service-4 {
+    @include breakpoint (range1) {
+        padding: 5%;
+    }
 
     h3 {
         @include breakpoint (range1) {
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
         }
     }
+
     h3::before {
         @include breakpoint (range1) {
             display: none;
         }
-        }
+    }
+
     p {
         @include breakpoint (range1) {
-            width: 300px;
+            width: auto;
             padding: 0;
             margin: 0;
         }   
     }
-    }
+}
 // "Founder" section
 
 .fullbleed-image img {
@@ -244,6 +258,19 @@ header.contact-page {
         @include breakpoint (range1) {
             display: block;
         }
+
+        @include breakpoint (range2) {
+            display: block;
+        }
+    
+        @include breakpoint (range3) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @include breakpoint (range3) {
+        padding: 2%;
     }
 
     .founder-image {
@@ -254,7 +281,7 @@ header.contact-page {
         }
 
         @include breakpoint (range2) {
-            width: 120%;
+            text-align: center;
             padding-left: 0;
         }
     
@@ -262,6 +289,10 @@ header.contact-page {
             @include breakpoint (range1) {
                 box-shadow: none;
             }
+
+            // @include breakpoint (range3) {
+            //     padding-top: 20px;
+            // }
         }
     }
 
@@ -269,6 +300,17 @@ header.contact-page {
         @include breakpoint (range1) {
             width: 100%; 
             text-align: center;
+        }
+
+        @include breakpoint (range2) {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include breakpoint (range3) {
+            width: 80%;
+            text-align: left;
+            padding: 0 0 0 50px;
         }
 
         h3 {
@@ -301,10 +343,24 @@ header.contact-page {
 //// BLOG PAGE ////
 
 aside {
+
+    @include breakpoint (range1) {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3%;
+        float: none;
+    }
+
     @include breakpoint (range2) {
         float: none;
     }
+
     .sidebar-image {
+        @include breakpoint (range1) {
+            position: none;
+            z-index: 0;
+        }
+
         @include breakpoint (range2) {
             position: none;
             z-index: 0;
@@ -312,6 +368,19 @@ aside {
     }
 
     .sidebar-alltext-wrapper {
+
+        @include breakpoint (range1) {
+            width: 100%;
+            padding: 2% 0 2% 0;
+            margin: 0;
+            text-align: center;
+
+            .sidebar-text {
+                width: 100%;
+                padding: 2%;
+            }
+        }
+
         @include breakpoint (range2) {
             padding-top: 450px;
             width: auto;

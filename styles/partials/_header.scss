@@ -5,19 +5,19 @@ header.home-page {
     @include header-style;
     background-image: url(../assets/home-image-1.jpg);
     min-height: 100vh;
-
 }
 
 .home-h1-style {
     margin: 0;
     padding: 0;
     text-align: center;
+    position: relative;
 
     h1 {
         @include section-heading (8.3rem, 400, left, normal, 0.75);
         color: $tertiary;
         margin: 20% 0 0 10%;
-        z-index:10;
+        z-index:100;
     
         .white {
             color: $secondary;
@@ -46,8 +46,7 @@ header.blog-page {
     }
 
     .page-h1-style {
-        margin: 20% 0 0 10%;
-        padding: 0;
+        padding: 20% 0 0 15%;
         text-align: left;
 
         h1 {
