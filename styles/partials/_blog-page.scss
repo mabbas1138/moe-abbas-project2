@@ -1,0 +1,171 @@
+
+// Side bar //
+
+aside {
+    width: 40%;
+    float: left;
+
+    .sidebar-image {
+        position: relative;
+        top: 100px;
+        z-index: 10;
+
+        img {
+            box-shadow: 42px 0 0 -20px $senary;
+        }
+    }
+
+    .sidebar-alltext-container {
+        width: 70%;
+        background: $senary;       
+        padding-top: 20%;
+        margin: 0 0 20% 23%;
+
+    .sidebar-about {
+        width: 80%;
+        padding-left: 7%;
+            
+        a {
+            font-style: italic;
+            font-weight: 700;
+            color: $quinary;
+            text-decoration: none;
+        }
+    } 
+  
+    .recent-posts {
+           padding-bottom: 5%;
+
+        h3 {
+            padding-left: 5%;
+        }
+
+        ul li {
+            width: 70%;
+            list-style-type: disc;
+            color: $quinary;
+            text-align: left;
+            padding: 5px 0 5px 1px;
+            margin-left: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            padding-left: 5%;
+        }
+    }
+    }
+}
+
+// Blog Post //
+
+.blog-inner-wrapper {
+    background: $secondary;
+}
+
+.blog {
+    display: flex;
+    flex-direction: row;
+
+    .blog-post-text {
+        box-shadow: -8px 8px $tertiary;
+        padding: 5%;
+        
+        h2 {
+            @include section-heading (2.15rem, 700, normal, 0.05rem, normal);
+        }
+    }
+}
+
+.date-writer-color {
+    color: $quinary;
+}
+
+.blog-post-container {
+        position: relative;
+        bottom: 100px;
+        right: 0;
+        
+    .blog-post-image {
+        width: 95%;
+
+        img {
+            box-shadow: -8px 14px $tertiary;
+        }
+    }
+}
+
+// Comments section //
+
+.comments {
+    padding-left: 40%;
+
+    h3 {
+        padding-left: 2%;
+    }
+
+    h2 {
+        @include section-heading (1rem, 700, normal, normal, 1.6rem);
+        color: $quinary;
+    }
+}
+
+.jeremy-container,
+.julia-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.jeremy-image,
+.julia-image {
+    padding-top: 3%;
+}
+
+.jeremy-comment-container,
+.julia-comment-container {
+    width: 75%;
+    padding-left: 4%;
+
+}
+
+// User Comment Form //
+
+.communication-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0 5% 40%;
+  
+    input[type=text],
+    input[type=email] {
+        @include input;
+        width: 45%;
+        background: $secondary;
+        padding: 0 0 2% 2%;
+        margin-bottom: 4%;
+    }
+
+    input[type=email] {
+        margin-left: 4%;
+    }
+
+    textarea {
+        width: 95%; 
+        padding: 2%;
+        border: 1px solid $quaternary;
+    }
+
+    input[type=submit] {
+        width: 95%;
+        font-family: $header-font;
+        color: $senary;
+        text-decoration: none;
+        background: $quaternary;
+        border: none;
+        padding: 1%;
+        margin-top: 3%;
+    }
+}

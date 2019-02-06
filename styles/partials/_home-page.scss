@@ -1,0 +1,191 @@
+// * HOME PAGE * //
+// "What is Planted" section //
+
+.what-is-planted {
+    background: $secondary;
+    padding: 10% 12%;
+   
+    .text-section {
+        text-align: center;
+   
+        h2 {
+            @include section-heading (2.8rem, 700, center, 0.05rem, normal);
+        }
+        
+        a {
+            padding: 1% 3%;
+        }
+    }
+}
+
+// "Events" section //
+
+.events {
+    .flex-master {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.event-1,
+.event-2 {
+    width: 100%;
+
+    .events-image-1 {
+        width: 90%;
+        position: relative;
+        bottom: 11%;
+
+        img {
+            @include br-yellow-box-shadow;
+        }
+    }
+    
+    .text-section-1 {
+        @include halfsies (right);
+        padding-bottom: 3%;
+        margin-left: 16%;
+    }
+
+    .events-image-2 {
+        width: 90%;
+        position: relative;
+        top: 10%;
+        left: 10%;
+
+        img {
+            @include bl-yellow-box-shadow;
+        }
+        
+    }
+
+    .text-section-2 {
+        @include halfsies (left);
+        margin-left: 8%;
+    }
+    
+    h3 {
+        @include section-heading (1.6rem, 700, normal, 1px, normal);
+    }
+}
+
+// "Services" section //
+
+.services {
+    background: $secondary;
+
+    .flex-master {
+        display: flex;
+        flex-direction: row;
+        padding: 10%;
+    }
+    
+    .service-1 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f06c";
+        }  
+
+        p {
+            padding-left: 12%;
+        }
+    }
+
+    .service-2 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f15b";
+        }
+        
+        p {
+            padding-left: 11%;
+        }
+    }
+
+    .service-3 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f0c0"; 
+        }
+        
+        p {
+            padding-left: 12%;
+        }
+    }
+
+    .service-4 {
+        h3::before {
+            @include service-icon-styling;
+            content: "\f095";
+        }  
+        p {
+            padding-left: 12%;
+        }
+    }
+}
+
+
+
+// "Founder" section //
+
+.fullbleed-image img {
+    max-width: 100%;
+}
+
+.founder {
+    background: $secondary;
+
+    .flex-master {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .founder-image {
+        padding-top: 4%;
+
+        img {
+            @include br-yellow-box-shadow;
+        }
+    }
+
+    .founder-text {
+        width: 70%;
+        padding: 1% 0 0 5%;
+
+        h3 {
+            @include section-heading (2.1rem, 700, normal, 1px, normal);
+        }
+
+        p {
+            margin-top: -30px;
+        }
+    }
+
+    .flex-master {
+        padding: 9%;
+        justify-content: center;
+    }
+}
+
+
+// Planted Gallery //
+
+.grid-gallery-images {
+    padding: 5% 9%;
+
+    .flex-master {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .gallery-image {
+            width: calc(100% - 40px);
+            padding: 0 20px;
+        }
+    }
+
+
+}
+
+
+
