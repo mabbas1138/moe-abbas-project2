@@ -13,7 +13,6 @@ $body-font: 'Roboto', sans-serif;
     text-align: $text-align;
 }
 
-
 @mixin header-style {
     height: auto;
     max-width: 100%;
@@ -42,11 +41,6 @@ $body-font: 'Roboto', sans-serif;
 
 @mixin bl-yellow-box-shadow {
     box-shadow: -15px 15px $tertiary;
-}
-
-@mixin margin-padding-0 {
-    margin: 0;
-    padding: 0;
 }
 
 @mixin section-heading ($font-size, $font-weight, $text-align, $letter-spacing, $line-height) {
@@ -82,6 +76,9 @@ $body-font: 'Roboto', sans-serif;
     }
 }
 
+//// MEDIA QUERY VARIABLES ///
+
+
 @mixin breakpoint ($class) {
     @if $class == range1 {
         @media(min-width: 320px) and (max-width: 768px) { @content; }
@@ -100,7 +97,7 @@ $body-font: 'Roboto', sans-serif;
     }
 
     @else if $class == range5 {
-        @media(min-width: 1260px) and (max-width: 1440px) { @content; }
+        @media(min-width: 1261px) and (max-width: 1440px) { @content; }
     }
 }
 

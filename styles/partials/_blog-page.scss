@@ -1,6 +1,3 @@
-.blog-inner-wrapper {
-    background: $secondary;
-}
 
 // SIDE BAR
 
@@ -20,10 +17,10 @@ aside {
 
     .sidebar-alltext-container {
         width: 70%;
-        background: $senary;
-        margin: 0 0 20% 23%;
+        background: $senary;       
         padding-top: 20%;
-        
+        margin: 0 0 20% 23%;
+
     .sidebar-about {
         width: 80%;
         padding-left: 7%;
@@ -63,14 +60,18 @@ aside {
 
 // Blog Post //
 
+.blog-inner-wrapper {
+    background: $secondary;
+}
+
 .blog {
     display: flex;
     flex-direction: row;
 
     .blog-post-text {
-        padding: 5%;
         box-shadow: -8px 8px $tertiary;
-
+        padding: 5%;
+        
         h2 {
             @include section-heading (2.15rem, 700, normal, 0.05rem, normal);
         }
@@ -95,7 +96,8 @@ aside {
     }
 }
 
-// User Comments section
+// Comments section //
+
 .comments {
     padding-left: 40%;
 
@@ -128,8 +130,7 @@ aside {
 
 }
 
-// User Comment Section
-
+// User Comment Form //
 
 .communication-form {
     width: 100%;
@@ -164,7 +165,7 @@ aside {
         text-decoration: none;
         background: $quaternary;
         border: none;
-        margin-top: 3%;
         padding: 1%;
+        margin-top: 3%;
     }
 }

@@ -1,9 +1,14 @@
+// NOTES:
+// I was informed by an instructor that nesting media queries within the selector is one approach. If I redid this, I would instead nest the selectors within a single media query. 
+
+
 // NAVIGATION BAR //
 
 .site-nav {
     @include breakpoint (range1) {
         width: 100%;
     }
+
     ul {
         @include breakpoint (range1) {
             text-align: center;
@@ -34,7 +39,7 @@
 
 // FOOTER //
 
-.copyrightContainer {
+.copyright-container {
     p {
         @include breakpoint (range1) {
             padding: 0;
@@ -42,6 +47,7 @@
         }
     }
 }
+
 // HEADER //
 
 /////////////////// HOME PAGE header ///////////////////
@@ -50,9 +56,9 @@ header.home-page,
 header.blog-page,
 header.contact-page {
     @include breakpoint (range1) {
-        background-size: cover;
-        background-position: cover;       
         width: auto; 
+        background-size: cover;
+        background-position: cover;        
     }
 
     h3 {
@@ -64,9 +70,9 @@ header.contact-page {
 
 .home-h1-style {
     @include breakpoint (range1) {
-        margin: 0;
-        padding: 0;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     h1 {
@@ -102,7 +108,7 @@ header.contact-page {
 header.blog-page {
     .page-h1-style {
         @include breakpoint (range1) {
-            margin: 10vh;
+            margin: 10vh 50px;
         }
 
         h1 {
@@ -115,28 +121,22 @@ header.blog-page {
 
 header.contact-page {
     @include breakpoint (range1) {
-        margin: 0;
-        padding: 0;
         text-align: left;
+        padding: 0;
+        margin: 0;
+        
     }
 
     .page-h1-style {
         @include breakpoint (range1) {
-            margin: 0 auto;
             padding-top: 25%;
+            margin: 0 auto; 
         }
     
         h1 { 
             @include breakpoint (range1) {
                 @include section-heading (2rem, 700, left, normal, normal);
                 text-align:center;
-            }
-
-        
-            .block {
-                @include breakpoint (range1) {
-                    display: block;
-                }   
             }
         }
     }
@@ -165,13 +165,16 @@ header.contact-page {
         display: flex;
         flex-direction: column;
     }
+
     @include breakpoint (range1) {
         .text-section-2 {
             order: 2;
         }
 
         .events-image-2 {
-            order: 1;
+            @include breakpoint (range1) {
+                order: 1;
+            } 
         }
     }
 }
@@ -186,17 +189,19 @@ header.contact-page {
     @include breakpoint (range2) {
         padding: 30px;
     }
+
     .events-image-1 {
         @include breakpoint (range1) {
             width: auto;
             position: initial;
-            margin-top: 1%;
             text-align: center;
+            margin-top: 1%;
+            
         }
         
         img {
             @include breakpoint (range1) {    
-            box-shadow: none;
+                box-shadow: none;
         }
     }
 }
@@ -205,8 +210,8 @@ header.contact-page {
         @include breakpoint (range1) {
             width: auto;
             position: initial;
-            margin-top: 1%;
             text-align: center;
+            margin-top: 1%;
         }
 
         img {
@@ -221,8 +226,8 @@ header.contact-page {
     .text-section-2 {
         @include breakpoint (range1) {
             width: auto;
-            margin: 0;
             text-align: center;
+            margin: 0;
         }
 
         @include breakpoint (range2) {
@@ -234,7 +239,6 @@ header.contact-page {
         h3 {
             @include breakpoint (range1) {
                 @include section-heading (1.2rem, 700, normal, normal, normal);
-
             }
         }
     }
@@ -271,9 +275,10 @@ header.contact-page {
 
     h3 {
         @include breakpoint (range1) {
-            margin: 0;
-            padding: 0;
             text-align: center;
+            padding: 0;
+            margin: 0;
+            
         }
     }
 
@@ -301,6 +306,10 @@ header.contact-page {
 }
 
 .founder {
+    @include breakpoint (range3) {
+        padding: 2%;
+    }
+
     .flex-master {
         @include breakpoint (range1) {
             display: block;
@@ -311,20 +320,17 @@ header.contact-page {
         }
     
         @include breakpoint (range3) {
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
     }
 
-    @include breakpoint (range3) {
-        padding: 2%;
-    }
 
     .founder-image {
         @include breakpoint (range1) {
             text-align: center; 
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
 
         @include breakpoint (range2) {
@@ -361,11 +367,8 @@ header.contact-page {
                 @include section-heading (1.3rem, 700, normal, 0.04rem, normal);
                 width: 100%;
                 padding: 2% 0 5% 0;
-      
             }
-
-        }
-           
+        }     
     }
 }
 
@@ -391,61 +394,42 @@ header.contact-page {
 aside {
     @include breakpoint (range1) {
         width: 90%;
-        margin: 0 auto;
-        padding-top: 3%;
         float: none;
-    }
-
-    @include breakpoint (range-special) {
-        width: 90%;
-        margin: 0 auto;
         padding-top: 3%;
-        float: none;
+        margin: 0 auto;
     }
 
     @include breakpoint (range2) {
         width: 90%;
-        margin: 0 auto;
-        padding-top: 2%;
         float: none;
+        padding-top: 2%;
+        margin: 0 auto;
     }
 
     .sidebar-image {
         @include breakpoint (range1) {
             width: auto;
-            margin: 0;
             text-align: center;
             position: none;
             z-index: 0;
-        }
-
-        @include breakpoint (range-special) {
-            width: 100%;
             margin: 0;
-            position: none;
-            z-index: 0;
         }
 
         @include breakpoint (range2) {
             width: 100%;
             text-align: center;
-            margin-bottom: 2%;
             position: initial;
             z-index: 0;
+            margin-bottom: 2%;
         }
     }
 
     .sidebar-text-container {
         @include breakpoint (range1) {
             width: 100%;
+            text-align: center;
             padding: 2% 0 2% 0;
             margin: 0;
-            text-align: center;
-
-            .sidebar-about {
-                width: 100%;
-                padding: 2%;
-            }
         }
 
             @include breakpoint (range2) {
@@ -468,11 +452,11 @@ aside {
 .recent-posts {
     @include breakpoint (range2) {
         padding: 1% 0 0 0;
-        
     }
+
     h3 {
         @include breakpoint (range2) {
-        padding-left: none;
+            padding-left: none;
         }
     }
 
@@ -483,7 +467,7 @@ aside {
     }
 }
 
-/////// BLOG /////////
+// Blog post //
 
 .blog {
     @include breakpoint (range1) {
@@ -536,7 +520,6 @@ aside {
                 box-shadow: none;
             }
         }
-        
     }
 
     .blog-post-text {
@@ -547,7 +530,6 @@ aside {
         }
 
         @include breakpoint (range2) {
-            // padding: 4%;
             text-align: center;
             box-shadow: none;
         }
@@ -566,7 +548,7 @@ aside {
     }
 }
 
-/////// COMMENTS ///////
+//////// COMMENTS ///////
 
 .comments {
     @include breakpoint (range1) {
@@ -575,9 +557,8 @@ aside {
 
     @include breakpoint (range2) {
         width: auto;
-        margin: 0;
         padding: 3%;
-
+        margin: 0; 
     }
 }
 
@@ -625,22 +606,22 @@ aside {
 
     @include breakpoint (range2) {
         width: 100%;
-        margin: 0 auto;
         padding: 0 0 3% 5%;
+        margin: 0 auto;
     }
 
     input[type=text],
     input[type=email] {
         @include breakpoint (range1) {
             width: 95%;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
 
         @include breakpoint (range2) {
             width: 95%;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
     }
 
@@ -691,18 +672,18 @@ aside {
 
 .contact-form {
     @include breakpoint (range1) {
-        position: initial;
         width: 95%;
-        margin: 0 auto;
+        position: initial;
         box-shadow: none;
+        margin: 0 auto;
     }
 
     input[type=text],
     input[type=email] {
         @include breakpoint (range1) {
             width: 95%;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
     }
 
@@ -716,10 +697,8 @@ aside {
         @include breakpoint (range1) {
             margin-top: 2%;
         }
-        
     }
 }
-
 
 
 

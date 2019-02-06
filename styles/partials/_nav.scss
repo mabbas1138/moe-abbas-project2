@@ -1,9 +1,4 @@
-.home-page {
-    .flex-master {
-        display: flex;
-        flex-direction: row;
-    }
-}
+// Navigation bar //
 
 .site-nav {
     padding-left: 4%;
@@ -20,10 +15,10 @@
         &:first-child {
             padding-left: 5%;
         }
-        
     }
-    
 }
+
+// 'Planted' in navigation section //
 
 header.home-page,
 header.blog-page,
@@ -33,6 +28,5 @@ header.contact-page {
         @include planted-in-nav;
         padding-top: 1.2%;
     }
-
 }
 

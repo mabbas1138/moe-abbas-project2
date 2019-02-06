@@ -44,9 +44,8 @@
     
     .text-section-1 {
         @include halfsies (right);
-        margin-left: 16%;
         padding-bottom: 3%;
-        
+        margin-left: 16%;
     }
 
     .events-image-2 {
@@ -132,7 +131,6 @@
 
 .fullbleed-image img {
     max-width: 100%;
-    
 }
 
 .founder {
@@ -167,7 +165,6 @@
     .flex-master {
         padding: 9%;
         justify-content: center;
-       
     }
 }
 
