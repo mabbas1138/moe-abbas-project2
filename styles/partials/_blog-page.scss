@@ -1,5 +1,5 @@
 
-// SIDE BAR
+// Side bar //
 
 aside {
     width: 40%;
@@ -11,7 +11,7 @@ aside {
         z-index: 10;
 
         img {
-            box-shadow: 50px 0 0 -20px $senary;
+            box-shadow: 42px 0 0 -20px $senary;
         }
     }
 
@@ -41,12 +41,12 @@ aside {
         }
 
         ul li {
-            margin: 5% 6%;
-        }
-
-        li::before {
-            content: "•";
+            width: 70%;
+            list-style-type: disc;
             color: $quinary;
+            text-align: left;
+            padding: 5px 0 5px 1px;
+            margin-left: 40px;
         }
 
         a {
@@ -91,7 +91,7 @@ aside {
         width: 95%;
 
         img {
-            box-shadow: -10px 14px $tertiary;
+            box-shadow: -8px 14px $tertiary;
         }
     }
 }

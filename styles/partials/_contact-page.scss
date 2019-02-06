@@ -9,7 +9,8 @@
         justify-content: space-around;
     }
 }
-// CONTACT INFO section //
+
+// Contact Info section //
 
 .contact-info-all {
     padding: 5% 0 0 5%;
@@ -47,10 +48,9 @@
     p {
         line-height: 0.5;
     }
-    
 }
 
-// CONTACT FORM section //
+// Contact Form section //
 
 .contact-form {
     @include bl-yellow-box-shadow;
@@ -62,7 +62,6 @@
     position: relative;
     bottom: 160px;
     padding: 3% 0 3% 2%;
-
 
     input[type=text],
     input[type=email] {
@@ -79,8 +78,7 @@
     textarea {
         width: 95%; 
         padding: 20px;
-        border: 1px solid $quaternary;
-        
+        border: 1px solid $quaternary;   
     }
 
     input[type=submit] {

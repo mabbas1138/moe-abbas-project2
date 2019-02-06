@@ -13,7 +13,6 @@ header.home-page {
     padding: 0;
     margin: 0;
     
-   
     h1 {
         @include section-heading (8.3rem, 400, left, normal, 0.75);
         color: $tertiary;
@@ -48,11 +47,11 @@ header.blog-page {
 
     .page-h1-style {
         text-align: left;
-        padding: 20% 0 0 15%;
 
         h1 {
             @include section-heading (4rem, 700, left, normal, 4.6rem);
-            color: $tertiary;   
+                padding: 15% 0 0 15%;
+                color: $tertiary;   
         }
     }
 }
