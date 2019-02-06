@@ -53,15 +53,15 @@
 // CONTACT FORM section //
 
 .contact-form {
-    position: relative;
-    bottom: 160px;
-    @include bl-yellow-box-shadow;
     width: 50%;
+    @include bl-yellow-box-shadow;
     background: $senary;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 3% 0 3% 2%;
+    position: relative;
+    bottom: 160px;
 
 
     input[type=text],
@@ -90,7 +90,7 @@
         text-decoration: none;
         background: $quaternary;
         border: none;
-        margin-top: 40px;
         padding: 10px;
+        margin-top: 40px;
     }
 }

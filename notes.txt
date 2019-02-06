@@ -1,24 +1,36 @@
-
-
+TO DO
 
 *** ADD INNER WRAPPER ***
 
-TO DO
+> Create hamburger menu 
+-- input checkbox
+-- label includes the spans (hamburger )
 
-> **Change line height on reduced font sizes**
+** Consider using CSS animation for images and/or nav bar
+--  Make rest of site disappear when About section clicked
 
-> **SEE IF YOU CAN USE TEXT ALIGN:CENTER/ETC. INSTEAD OF PADDING**
+> Fix janky responsive on Blog page
 
-> Change flex-master global as mixin and update html accordingly
+====
+
+REVIEW
+
+> *** DOUBLE CHECK THAT ALL CLASSES ARE BEING USED...IF NOT, DELETE NAME ***
+
+> Double check for Inception rule
 
 > Look at first project to see use of margin, padding, max-width
 
-4) Design mobile -- **Consider using CSS animation to reveal images**
+> Change flex-master global as mixin and update html accordingly
 
--- Must go down to 320px
--- Make rest of site disappear when About section clicked
+> See if you need a percentage on the padding...Do you want it to scale up/down? If not, use pixels.
 
-** Consider using CSS animation for images and/or nav bar
+> **SEE IF YOU CAN USE TEXT ALIGN:CENTER/ETC. INSTEAD OF PADDING**
+
+> **Change line height on reduced font sizes**
+
+
+=======
 
 ** Check to see if images are optimized (https://github.com/HackerYou/bootcamp-notes/blob/master/css/image-formats-and-svg.md)
 -- Consider using https://tinypng.com/
@@ -26,11 +38,4 @@ TO DO
 
 ** If your site is loading slowly, it could be because of the image sizes **
 
-QUESTIONS
-
-> Should I restructure the queries like the following:
-
-@include breakpoint (range1) {
-    (sections, etc.)
-}
 
