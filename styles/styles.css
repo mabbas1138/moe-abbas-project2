@@ -325,8 +325,7 @@ header.contact-page {
   background-image: url(../assets/contact-header-1.jpg); }
   header.contact-page .page-h1-style {
     text-align: left;
-    padding: 0;
-    margin: 16% 0 0 10%; }
+    padding: 17% 0 0 10%; }
     header.contact-page .page-h1-style h1 {
       font-size: 4rem;
       font-weight: 700;
@@ -827,12 +826,13 @@ aside {
   header.blog-page .page-h1-style {
     margin: 10vh 50px; } }
 
-header.blog-page .page-h1-style h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: left;
-  letter-spacing: normal;
-  line-height: normal; }
+@media (min-width: 320px) and (max-width: 768px) {
+  header.blog-page .page-h1-style h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: normal;
+    line-height: normal; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   header.contact-page {
