@@ -1,9 +1,3 @@
-// NOTES:
-// 1) I was informed by an instructor that nesting media queries within the selector is one possible approach. If I redid this, I would instead nest the selectors within a single media query. 
-// 2) I didn't have time to do the hamburger menu :(. I swear I tried. I know I could've used JS, but I wanted to learn the CSS method. Alas, it wasn't functioning properly.
-// 3) Based on the feedback from project 1, I tried to rename some classes, but despite my diligence, something broke my page. I reverted to the old classes. I would've combed through to find the problem, but didn't have time.
-
-
 // NAVIGATION BAR //
 
 .site-nav {
@@ -74,7 +68,17 @@ header.contact-page {
     @include breakpoint (range1) {
         text-align: center;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
+        top: 10px;
+        left: 0;
+    }
+
+    @include breakpoint (range2) {
+
+    }
+
+    @include breakpoint (range3) {
+        top: 220px;
     }
 
     h1 {
@@ -85,14 +89,26 @@ header.contact-page {
         }
 
         @include breakpoint (range2) {
-            @include section-heading (6rem, 400, left, normal, 0.75);
+            @include section-heading (5rem, 400, left, normal, 0.75);
                 margin: 20% 0 0 10%;
+        }
+
+        @include breakpoint (range3) {
+            margin: 0 auto;
         }
     }
 }
 
 .intruder-plant {
     @include breakpoint (range1) {
+        display: none;
+    }
+
+    @include breakpoint (range2) {
+        display: none;
+    }
+
+    @include breakpoint (range3) {
         display: none;
     }
 
@@ -375,12 +391,22 @@ header.contact-page {
 // Planted Gallery // 
 
 .grid-gallery-images {
-    @include breakpoint (range1) {
-        padding: 1%;
-    }
     .gallery-image:nth-child(2) {
         @include breakpoint (range1) {
             display: none;
+        }
+    }
+
+    @include breakpoint (range1) {
+        .flex-master {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+
+            .gallery-image {
+                padding: 10px 20px;
+            }
         }
     }
 }
@@ -700,13 +726,13 @@ aside {
 
 // Social media links //
 
-.social-media-links {
+.contact-info-all {
     ul {
         @include breakpoint (range1) {
-            justify-content: space-around;
+            justify-content: center;
         }
     }
-}
+} 
 
 // Contact info //
 

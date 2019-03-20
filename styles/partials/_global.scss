@@ -82,6 +82,12 @@ li {
   text-decoration: none;
   background: $quaternary;
   padding: 10px;
+
+      &:hover {
+        background: yellow;
+        color: black;
+        transition: 0.2s;
+      }
 }
 
 .inner-wrapper,
