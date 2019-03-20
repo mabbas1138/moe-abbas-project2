@@ -1,0 +1,84 @@
+// HOME header //
+
+header.home-page {
+    @include full-bleed (center);
+    @include header-style;
+    min-height: 100vh;
+    background-image: url(../assets/home-image-1.jpg);
+}
+ 
+.home-h1-style {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    
+    h1 {
+        @include section-heading (8.3rem, 400, left, normal, 0.75);
+        color: $tertiary;
+        z-index:100;
+        margin: 20% 0 0 18%;
+        
+        .white {
+            display: block;
+            color: $secondary;
+        }
+    } 
+ }
+
+ .intruder-plant {
+    width: 600px;
+    position: absolute;
+    top: 380px;
+    right: 0;
+ }
+   
+// BLOG header //
+
+header.blog-page {
+    @include full-bleed (contain);
+    @include header-style;
+    min-height: 70vh;
+    background-image: url(../assets/blog-header-1.jpg);
+    
+    h3 {
+        @include planted-in-nav;
+    }
+
+    .page-h1-style {
+        text-align: left;
+
+        h1 {
+            @include section-heading (4rem, 700, left, normal, 4.6rem);
+                padding: 15% 0 0 15%;
+                color: $tertiary;   
+        }
+    }
+}
+
+// CONTACT header //
+
+header.contact-page {
+    @include full-bleed (contain);
+    @include header-style;
+    min-height: 50vh;
+    background-image: url(../assets/contact-header-1.jpg);
+    
+    .page-h1-style {
+        text-align: left;
+        padding: 17% 0 0 10%;
+      
+        
+        h1 {
+            @include section-heading (4rem, 700, left, normal, 4.6rem);
+                color: $tertiary;
+
+            .block {
+                display: block;
+            }
+        }
+    }
+}
