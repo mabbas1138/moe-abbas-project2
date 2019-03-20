@@ -14,13 +14,12 @@
 
 .contact-info-all {
     padding: 5% 0 0 5%;
-}
 
-.social-media-links {
     ul {
         display: flex;
         flex-direction: row;
-    }
+        justify-content: left;
+
     
     li {
         padding: 3% 3% 3% 0.5%;
@@ -33,8 +32,10 @@
                 color: $tertiary;
                 transition: 0.25s;
             }
+        }
     }
 }
+
 
 .contact-info {
     margin-top: 10%;

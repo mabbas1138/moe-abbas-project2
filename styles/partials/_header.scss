@@ -9,9 +9,12 @@ header.home-page {
  
 .home-h1-style {
     position: relative;
+    top: 100px;
+    left: 50px;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    width: 80%;
     
     h1 {
         @include section-heading (8.3rem, 400, left, normal, 0.75);
@@ -27,9 +30,9 @@ header.home-page {
  }
 
  .intruder-plant {
-    width: 40%;
+    width: 600px;
     position: absolute;
-    top: 320px;
+    top: 380px;
     right: 0;
  }
    
