@@ -1,104 +1,108 @@
+$body-font: "Roboto", sans-serif;
+$header-font: "Josefin Sans", "Open Sans", sans-serif;
 $primary: #2c2c2c; /* black */
 $secondary: #f0efed; /* off-white */
 $tertiary: #f8e71c; /* sunny yellow */
 $quaternary: #0e902d; /* green */
 $quinary: #074115; /* forest green */
 $senary: #ffffff; /* white */
-$header-font: 'Josefin Sans', 'Open Sans', sans-serif;
-$body-font: 'Roboto', sans-serif;
 
-
-@mixin halfsies ($text-align) {
-    width: 75%;
-    text-align: $text-align;
+@mixin halfsies($text-align) {
+  text-align: $text-align;
+  width: 75%;
 }
 
 @mixin header-style {
-    height: auto;
-    max-width: 100%;
-    padding: 1px;
-    position: relative;
-
+  height: auto;
+  max-width: 100%;
+  padding: 1px;
+  position: relative;
 }
 
 @mixin planted-in-nav {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    color: $secondary;
-    float: left;
-    margin: 0;
-    padding-left: 90px;
+  color: #f0efed;
+  display: block;
+  float: left;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 90px;
 }
 
-@mixin full-bleed ($background-position) {
-    background-size: cover;
-    background-position: $background-position;
+@mixin full-bleed($background-position) {
+  background-position: $background-position;
+  background-size: cover;
 }
 
 @mixin br-yellow-box-shadow {
-    box-shadow: 15px 15px 0 1px $tertiary; 
+  box-shadow: 15px 15px 0 1px $tertiary;
 }
 
 @mixin bl-yellow-box-shadow {
-    box-shadow: -15px 15px $tertiary;
+  box-shadow: -15px 15px $tertiary;
 }
 
-@mixin section-heading ($font-size, $font-weight, $text-align, $letter-spacing, $line-height) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    text-align: $text-align;
-    letter-spacing: $letter-spacing;
-    line-height: $line-height;
+@mixin section-heading(
+  $font-size,
+  $font-weight,
+  $text-align,
+  $letter-spacing,
+  $line-height
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-align: $text-align;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
 }
 
 @mixin service-icon-styling {
-    font-family: 'Font Awesome 5 Free';
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
-    background: $tertiary;
+  background: $tertiary;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 20px;
+  padding: 10px;
 }
 
 @mixin input {
-    font-family: $header-font;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    text-align: left;
-    border: none;
-    border-bottom: 1px solid $quaternary;   
+  border-bottom: 1px solid $quaternary;
+  border: none;
+  font-family: $header-font;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  text-align: left;
 }
 
 @mixin yellow-hover {
-    a:hover {
-        color: $tertiary;
-        transition: 0.5s;
-    }
+  a:hover {
+    color: $tertiary;
+    transition: 0.5s;
+  }
 }
 
 //// MEDIA QUERY VARIABLES ///
 
-
-@mixin breakpoint ($class) {
-    @if $class == range1 {
-        @media(min-width: 320px) and (max-width: 768px) { @content; }
+@mixin breakpoint($class) {
+  @if $class == range1 {
+    @media (min-width: 320px) and (max-width: 768px) {
+      @content;
     }
-
-    @else if $class == range2 {
-        @media(min-width: 769px) and (max-width: 870px) { @content; }
+  } @else if $class == range2 {
+    @media (min-width: 769px) and (max-width: 870px) {
+      @content;
     }
-
-    @else if $class == range3 {
-        @media(min-width: 871px) and (max-width: 1087px) { @content; }
+  } @else if $class == range3 {
+    @media (min-width: 871px) and (max-width: 1087px) {
+      @content;
     }
-
-    @else if $class == range4 {
-        @media(min-width: 1088px) and (max-width: 1260px) { @content; }
+  } @else if $class == range4 {
+    @media (min-width: 1088px) and (max-width: 1260px) {
+      @content;
     }
-
-    @else if $class == range5 {
-        @media(min-width: 1261px) and (max-width: 1440px) { @content; }
+  } @else if $class == range5 {
+    @media (min-width: 1261px) and (max-width: 1440px) {
+      @content;
     }
+  }
 }
-

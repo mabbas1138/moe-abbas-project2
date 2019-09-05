@@ -1,176 +1,174 @@
-// 
-
 body {
-    background: $secondary;
+  background: $secondary;
 }
 
-// Side bar //
+/// SIDE BAR ///
 
 aside {
-    width: 40%;
-    float: left;
+  float: left;
+  width: 40%;
 
-    .sidebar-image {
-        position: relative;
-        top: 100px;
-        z-index: 10;
+  .sidebar-image {
+    position: relative;
+    top: 100px;
+    z-index: 10;
 
-        img {
-            box-shadow: 42px 0 0 -20px $senary;
-        }
+    img {
+      box-shadow: 42px 0 0 -20px $senary;
     }
+  }
 
-    .sidebar-alltext-container {
-        width: 70%;
-        background: $senary;       
-        padding-top: 20%;
-        margin: 0 0 20% 23%;
+  .sidebar-alltext-container {
+    width: 70%;
+		background: $senary;
+		margin: 0 0 20% 23%;
+    padding-top: 20%;
+
 
     .sidebar-about {
-        width: 80%;
-        padding-left: 7%;
-            
-        a {
-            font-style: italic;
-            font-weight: 700;
-            color: $quinary;
-            text-decoration: none;
-        }
-    } 
-  
+      padding-left: 7%;
+      width: 80%;
+
+      a {
+        color: $quinary;
+        font-style: italic;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+
     .recent-posts {
-        padding-bottom: 5%;
+      padding-bottom: 5%;
 
-        h3 {
-            padding-left: 5%;
-        }
+      h3 {
+        padding-left: 5%;
+      }
 
-        ul li {
-            width: 70%;
-            list-style-type: disc;
-            color: $quinary;
-            text-align: left;
-            padding: 5px 0 5px 1px;
-            margin-left: 40px;
-        }
+      ul li {
+        color: $quinary;
+        list-style-type: disc;
+        margin-left: 40px;
+        padding: 5px 0 5px 1px;
+        text-align: left;
+        width: 70%;
+      }
 
-        a {
-            text-decoration: none;
-            color: #000;
-            padding-left: 5%;
-        }
+      a {
+        color: #000;
+        padding-left: 5%;
+        text-decoration: none;
+      }
     }
-    }
+  }
 }
 
-// Blog Post //
+/// BLOG POST ///
 
 .blog-inner-wrapper {
-    background: $secondary;
+  background: $secondary;
 }
 
 .blog {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    .blog-post-text {
-        box-shadow: -8px 8px $tertiary;
-        padding: 5%;
-        
-        h2 {
-            @include section-heading (2.15rem, 700, normal, 0.05rem, normal);
-        }
+  .blog-post-text {
+    box-shadow: -8px 8px $tertiary;
+    padding: 5%;
+
+    h2 {
+      @include section-heading(2.15rem, 700, normal, 0.05rem, normal);
     }
+  }
 }
 
 .date-writer-color {
-    color: $quinary;
+  color: $quinary;
 }
 
 .blog-post-container {
-        position: relative;
-        bottom: 100px;
-        right: 0;
-        
-    .blog-post-image {
-        width: 95%;
+  bottom: 100px;
+  position: relative;
+  right: 0;
 
-        img {
-            box-shadow: -8px 14px $tertiary;
-        }
+  .blog-post-image {
+    width: 95%;
+
+    img {
+      box-shadow: -8px 14px $tertiary;
     }
+  }
 }
 
-// Comments section //
+/// COMMENTS SECTION ///
 
 .comments {
-    padding-left: 40%;
+  padding-left: 40%;
 
-    h3 {
-        padding-left: 2%;
-    }
+  h3 {
+    padding-left: 2%;
+  }
 
-    h2 {
-        @include section-heading (1rem, 700, normal, normal, 1.6rem);
-        color: $quinary;
-    }
+  h2 {
+    @include section-heading(1rem, 700, normal, normal, 1.6rem);
+    color: $quinary;
+  }
 }
 
 .jeremy-container,
 .julia-container {
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
 }
 
 .jeremy-image,
 .julia-image {
-    padding-top: 3%;
+  padding-top: 3%;
 }
 
 .jeremy-comment-container,
 .julia-comment-container {
-    width: 75%;
-    padding-left: 4%;
-
+  padding-left: 4%;
+  width: 75%;
 }
 
-// User Comment Form //
+/// USER COMMENT FORM ///
 
 .communication-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5% 0 5% 40%;
-  
-    input[type=text],
-    input[type=email] {
-        @include input;
-        width: 45%;
-        background: $secondary;
-        padding: 0 0 2% 2%;
-        margin-bottom: 4%;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 0 5% 40%;
+  width: 100%;
 
-    input[type=email] {
-        margin-left: 4%;
-    }
+  input[type="text"],
+  input[type="email"] {
+    @include input;
+    background: $secondary;
+    margin-bottom: 4%;
+    padding: 0 0 2% 2%;
+    width: 45%;
+  }
 
-    textarea {
-        width: 95%; 
-        padding: 2%;
-        border: 1px solid $quaternary;
-    }
+  input[type="email"] {
+    margin-left: 4%;
+  }
 
-    input[type=submit] {
-        width: 95%;
-        font-family: $header-font;
-        color: $senary;
-        text-decoration: none;
-        background: $quaternary;
-        border: none;
-        padding: 1%;
-        margin-top: 3%;
-    }
+  textarea {
+    border: 1px solid $quaternary;
+    padding: 2%;
+    width: 95%;
+  }
+
+  input[type="submit"] {
+    background: $quaternary;
+    border: none;
+    color: $senary;
+    font-family: $header-font;
+    margin-top: 3%;
+    padding: 1%;
+    text-decoration: none;
+    width: 95%;
+  }
 }
