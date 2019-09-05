@@ -1,21 +1,21 @@
-// Navigation bar //
+/// NAV BAR ///
 
 .site-nav {
-    padding-left: 4%;
+  padding-left: 4%;
 
-    ul {
-        display: flex;
-        flex-direction: row;
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    padding: 2.5% 2%;
+    @include yellow-hover;
+
+    &:first-child {
+      padding-left: 5%;
     }
-
-    li {
-        padding: 2.5% 2%;
-            @include yellow-hover;
-
-        &:first-child {
-            padding-left: 5%;
-        }
-    }
+  }
 }
 
 // 'Planted' in navigation section //
@@ -23,10 +23,8 @@
 header.home-page,
 header.blog-page,
 header.contact-page {
-
-    h3 {
-        @include planted-in-nav;
-        padding-top: 1.2%;
-    }
+  h3 {
+    @include planted-in-nav;
+    padding-top: 1.2%;
+  }
 }
-

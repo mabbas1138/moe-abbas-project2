@@ -1,23 +1,23 @@
 .visually-hidden:not(:focus):not(:active) {
-    width: 1px;
-    height: 1px;
-    position: absolute;
     border: 0;
-    padding: 0;
-    margin: -1px;
-    white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
     overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .skip-link {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
   background: white;
   color: black;
+  left: -1000px;
+  position: absolute;
+  top: 5px;
+  z-index: 999;
 }
 
 .skip-link:focus {
@@ -49,8 +49,8 @@ h3 {
 
 p {
   font-family: $body-font;
-  font-weight: 300;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 32px;
 }
 
@@ -68,20 +68,20 @@ li {
   width: 100%;
 
   a {
-      font-family: $header-font;
-      font-size: 1rem;
-      color: $senary;
-      text-decoration: none;
-      text-transform: uppercase;
+    color: $senary;
+    font-family: $header-font;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
 
 .more-info a {
-  font-family: $header-font;
-  color: $senary;
-  text-decoration: none;
   background: $quaternary;
+  color: $senary;
+  font-family: $header-font;
   padding: 10px;
+  text-decoration: none;
 
       &:hover {
         background: yellow;
@@ -93,8 +93,8 @@ li {
 .inner-wrapper,
 .blog-inner-wrapper,
 .contact-inner-wrapper {
-  width: 100%;
+  margin: 0 auto;
   max-width: 1600px;
   padding: 1px;
-  margin: 0 auto;
+  width: 100%;
 }

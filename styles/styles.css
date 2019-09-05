@@ -139,25 +139,25 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 /* forest green */
 /* white */
 .visually-hidden:not(:focus):not(:active) {
-  width: 1px;
-  height: 1px;
-  position: absolute;
   border: 0;
-  padding: 0;
-  margin: -1px;
-  white-space: nowrap;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; }
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .skip-link {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
   background: white;
-  color: black; }
+  color: black;
+  left: -1000px;
+  position: absolute;
+  top: 5px;
+  z-index: 999; }
 
 .skip-link:focus {
   left: 0; }
@@ -182,8 +182,8 @@ h3 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 32px; }
 
 ul {
@@ -197,18 +197,18 @@ li {
   background: black;
   width: 100%; }
   .site-nav a {
+    color: #ffffff;
     font-family: "Josefin Sans", "Open Sans", sans-serif;
     font-size: 1rem;
-    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase; }
 
 .more-info a {
-  font-family: "Josefin Sans", "Open Sans", sans-serif;
-  color: #ffffff;
-  text-decoration: none;
   background: #0e902d;
-  padding: 10px; }
+  color: #ffffff;
+  font-family: "Josefin Sans", "Open Sans", sans-serif;
+  padding: 10px;
+  text-decoration: none; }
   .more-info a:hover {
     background: yellow;
     color: black;
@@ -219,10 +219,10 @@ li {
 .inner-wrapper,
 .blog-inner-wrapper,
 .contact-inner-wrapper {
-  width: 100%;
+  margin: 0 auto;
   max-width: 1600px;
   padding: 1px;
-  margin: 0 auto; }
+  width: 100%; }
 
 .site-nav {
   padding-left: 4%; }
@@ -247,67 +247,67 @@ li {
 header.home-page h3,
 header.blog-page h3,
 header.contact-page h3 {
+  color: #f0efed;
   display: block;
+  float: left;
   font-size: 2rem;
   font-weight: 400;
-  color: #f0efed;
-  float: left;
   margin: 0;
   padding-left: 90px;
   padding-top: 1.2%; }
 
 header.home-page {
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   height: auto;
   max-width: 100%;
   padding: 1px;
   position: relative;
-  min-height: 100vh;
-  background-image: url(../assets/home-image-1.jpg); }
+  background-image: url(../assets/home-image-1.jpg);
+  min-height: 100vh; }
 
 .home-h1-style {
-  position: relative;
-  top: 100px;
   left: 50px;
-  text-align: center;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  top: 100px;
   width: 80%; }
   .home-h1-style h1 {
     font-size: 8.3rem;
     font-weight: 400;
-    text-align: left;
     letter-spacing: normal;
     line-height: 0.75;
+    text-align: left;
     color: #f8e71c;
-    z-index: 100;
-    margin: 20% 0 0 18%; }
+    margin: 20% 0 0 18%;
+    z-index: 100; }
     .home-h1-style h1 .white {
-      display: block;
-      color: #f0efed; }
+      color: #f0efed;
+      display: block; }
 
 .intruder-plant {
-  width: 600px;
   position: absolute;
+  right: 0;
   top: 380px;
-  right: 0; }
+  width: 600px; }
 
 header.blog-page {
-  background-size: cover;
   background-position: contain;
+  background-size: cover;
   height: auto;
   max-width: 100%;
   padding: 1px;
   position: relative;
-  min-height: 70vh;
-  background-image: url(../assets/blog-header-1.jpg); }
+  background-image: url(../assets/blog-header-1.jpg);
+  min-height: 70vh; }
   header.blog-page h3 {
+    color: #f0efed;
     display: block;
+    float: left;
     font-size: 2rem;
     font-weight: 400;
-    color: #f0efed;
-    float: left;
     margin: 0;
     padding-left: 90px; }
   header.blog-page .page-h1-style {
@@ -315,30 +315,30 @@ header.blog-page {
     header.blog-page .page-h1-style h1 {
       font-size: 4rem;
       font-weight: 700;
-      text-align: left;
       letter-spacing: normal;
       line-height: 4.6rem;
-      padding: 15% 0 0 15%;
-      color: #f8e71c; }
+      text-align: left;
+      color: #f8e71c;
+      padding: 15% 0 0 15%; }
 
 header.contact-page {
-  background-size: cover;
   background-position: contain;
+  background-size: cover;
   height: auto;
   max-width: 100%;
   padding: 1px;
   position: relative;
-  min-height: 50vh;
-  background-image: url(../assets/contact-header-1.jpg); }
+  background-image: url(../assets/contact-header-1.jpg);
+  min-height: 50vh; }
   header.contact-page .page-h1-style {
-    text-align: left;
-    padding: 17% 0 0 10%; }
+    padding: 17% 0 0 10%;
+    text-align: left; }
     header.contact-page .page-h1-style h1 {
       font-size: 4rem;
       font-weight: 700;
-      text-align: left;
       letter-spacing: normal;
       line-height: 4.6rem;
+      text-align: left;
       color: #f8e71c; }
       header.contact-page .page-h1-style h1 .block {
         display: block; }
@@ -351,9 +351,9 @@ header.contact-page {
     .what-is-planted .text-section h2 {
       font-size: 2.8rem;
       font-weight: 700;
-      text-align: center;
       letter-spacing: 0.05rem;
-      line-height: normal; }
+      line-height: normal;
+      text-align: center; }
     .what-is-planted .text-section a {
       padding: 1% 3%; }
 
@@ -380,8 +380,8 @@ header.contact-page {
       box-shadow: 15px 15px 0 1px #f8e71c; }
   .event-1 .text-section-1,
   .event-2 .text-section-1 {
-    width: 75%;
     text-align: right;
+    width: 75%;
     padding-bottom: 3%;
     margin-left: 16%; }
   .event-1 .events-image-2,
@@ -396,16 +396,16 @@ header.contact-page {
       box-shadow: -15px 15px #f8e71c; }
   .event-1 .text-section-2,
   .event-2 .text-section-2 {
-    width: 75%;
     text-align: left;
+    width: 75%;
     margin-left: 8%; }
   .event-1 h3,
   .event-2 h3 {
     font-size: 1.6rem;
     font-weight: 700;
-    text-align: normal;
     letter-spacing: 1px;
-    line-height: normal; }
+    line-height: normal;
+    text-align: normal; }
 
 .services {
   background: #f0efed; }
@@ -419,38 +419,38 @@ header.contact-page {
     flex-direction: row;
     padding: 10%; }
   .services .service-1 h3::before {
-    font-family: 'Font Awesome 5 Free';
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
     background: #f8e71c;
+    border-radius: 50%;
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 20px;
+    padding: 10px;
     content: "\f06c"; }
   .services .service-1 p {
     padding-left: 12%; }
   .services .service-2 h3::before {
-    font-family: 'Font Awesome 5 Free';
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
     background: #f8e71c;
+    border-radius: 50%;
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 20px;
+    padding: 10px;
     content: "\f15b"; }
   .services .service-2 p {
     padding-left: 11%; }
   .services .service-3 h3::before {
-    font-family: 'Font Awesome 5 Free';
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
     background: #f8e71c;
+    border-radius: 50%;
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 20px;
+    padding: 10px;
     content: "\f0c0"; }
   .services .service-3 p {
     padding-left: 12%; }
   .services .service-4 h3::before {
-    font-family: 'Font Awesome 5 Free';
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
     background: #f8e71c;
+    border-radius: 50%;
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 20px;
+    padding: 10px;
     content: "\f095"; }
   .services .service-4 p {
     padding-left: 12%; }
@@ -479,9 +479,9 @@ header.contact-page {
     .founder .founder-text h3 {
       font-size: 2.1rem;
       font-weight: 700;
-      text-align: normal;
       letter-spacing: 1px;
-      line-height: normal; }
+      line-height: normal;
+      text-align: normal; }
     .founder .founder-text p {
       margin-top: -30px; }
   .founder .flex-master {
@@ -565,9 +565,9 @@ aside {
     .blog .blog-post-text h2 {
       font-size: 2.15rem;
       font-weight: 700;
-      text-align: normal;
       letter-spacing: 0.05rem;
-      line-height: normal; }
+      line-height: normal;
+      text-align: normal; }
 
 .date-writer-color {
   color: #074115; }
@@ -589,9 +589,9 @@ aside {
   .comments h2 {
     font-size: 1rem;
     font-weight: 700;
-    text-align: normal;
     letter-spacing: normal;
     line-height: 1.6rem;
+    text-align: normal;
     color: #074115; }
 
 .jeremy-container,
@@ -629,13 +629,13 @@ aside {
   padding: 5% 0 5% 40%; }
   .communication-form input[type=text],
   .communication-form input[type=email] {
+    border-bottom: 1px solid #0e902d;
+    border: none;
     font-family: "Josefin Sans", "Open Sans", sans-serif;
-    font-weight: 300;
     font-size: 1rem;
+    font-weight: 300;
     line-height: 1.6rem;
     text-align: left;
-    border: none;
-    border-bottom: 1px solid #0e902d;
     width: 45%;
     background: #f0efed;
     padding: 0 0 2% 2%;
@@ -721,13 +721,13 @@ aside {
   padding: 3% 0 3% 2%; }
   .contact-form input[type=text],
   .contact-form input[type=email] {
+    border-bottom: 1px solid #0e902d;
+    border: none;
     font-family: "Josefin Sans", "Open Sans", sans-serif;
-    font-weight: 300;
     font-size: 1rem;
+    font-weight: 300;
     line-height: 1.6rem;
     text-align: left;
-    border: none;
-    border-bottom: 1px solid #0e902d;
     width: 45%;
     padding: 0 0 2% 3%;
     margin-bottom: 5%; }
@@ -749,11 +749,11 @@ aside {
 
 .copyright-container {
   color: #ffffff;
-  text-align: center;
-  background: #2c2c2c; }
+  background: #2c2c2c;
+  text-align: center; }
   .copyright-container p {
-    padding: 5px;
-    margin: 0; }
+    margin: 0;
+    padding: 5px; }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .site-nav {
@@ -812,9 +812,9 @@ aside {
   .home-h1-style h1 {
     font-size: 3rem;
     font-weight: 400;
-    text-align: center;
     letter-spacing: normal;
     line-height: normal;
+    text-align: center;
     margin: 200px auto;
     z-index: 0; } }
 
@@ -822,9 +822,9 @@ aside {
   .home-h1-style h1 {
     font-size: 5rem;
     font-weight: 400;
-    text-align: left;
     letter-spacing: normal;
     line-height: 0.75;
+    text-align: left;
     margin: 20% 0 0 10%; } }
 
 @media (min-width: 871px) and (max-width: 1087px) {
@@ -859,9 +859,9 @@ aside {
   header.blog-page .page-h1-style h1 {
     font-size: 3rem;
     font-weight: 700;
-    text-align: left;
     letter-spacing: normal;
-    line-height: normal; } }
+    line-height: normal;
+    text-align: left; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   header.contact-page {
@@ -878,9 +878,9 @@ aside {
   header.contact-page .page-h1-style h1 {
     font-size: 2rem;
     font-weight: 700;
-    text-align: left;
     letter-spacing: normal;
     line-height: normal;
+    text-align: left;
     text-align: center; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -891,9 +891,9 @@ aside {
   .what-is-planted .text-section h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    text-align: center;
     letter-spacing: 1px;
-    line-height: normal; } }
+    line-height: normal;
+    text-align: center; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .event-2 {
@@ -969,9 +969,9 @@ aside {
   .events .text-section-2 h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: normal;
     letter-spacing: normal;
-    line-height: normal; } }
+    line-height: normal;
+    text-align: normal; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .events .text-section-2 .more-info {
@@ -1072,9 +1072,9 @@ aside {
   .founder .founder-text h3 {
     font-size: 1.3rem;
     font-weight: 700;
-    text-align: normal;
     letter-spacing: 0.04rem;
     line-height: normal;
+    text-align: normal;
     width: 100%;
     padding: 2% 0 5% 0; } }
 
@@ -1269,9 +1269,9 @@ aside {
   .blog .blog-post-text h2 {
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: normal;
     letter-spacing: 0.05rem;
-    line-height: normal; } }
+    line-height: normal;
+    text-align: normal; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .blog .blog-post-text p {

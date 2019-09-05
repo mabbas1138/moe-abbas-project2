@@ -1,11 +1,10 @@
-
 .copyright-container {
-    color: $senary;
+		color: $senary;
+		background: $primary;
     text-align: center;
-    background: $primary;
-    
+
     p {
-        padding: 5px;
-        margin: 0;
+		  margin: 0;
+      padding: 5px;
     }
 }
